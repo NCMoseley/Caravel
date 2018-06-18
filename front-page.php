@@ -18,7 +18,7 @@ get_header(); ?>
 			<div class="fullpage" id="fullpage">
 
 				<section class="hero-container">
-					<div name="#" id="#" class="header-container">
+					<div name="#" id="#about" class="header-container">
 						<h1>Simple, Powerful &
 							<br>Efficient Websites.</h1>
 						<p>We build modern websites for modern businesses and individuals. No fluff, no over design, no bloat. Fast, elegant,

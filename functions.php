@@ -88,9 +88,7 @@ add_filter('stylesheet_uri', 'caravel_web_minified_css', 10, 2);
 function caravel_web_scripts()
 {
     wp_enqueue_style('red-starter-style', get_stylesheet_uri());
-    wp_enqueue_style('owl-carousel-style', get_template_directory_uri() . '/build/css/owl.carousel.min.css');
-    wp_enqueue_style('owl-carousel-theme', get_template_directory_uri() . '/build/css/owl.theme.default.min.css');
-    wp_enqueue_style('full-page-theme', get_template_directory_uri() . '/lib/jquery.fullpage.css');
+    
     wp_enqueue_style('mainfont', "https://fonts.googleapis.com/css?family=Work+Sans:300,400|Playfair+Display:100,200,300,400,500,700");
     
     wp_enqueue_script('jquery');
@@ -103,7 +101,6 @@ function caravel_web_scripts()
     wp_enqueue_script('waypoints', get_template_directory_uri() . '/lib/noframework.waypoints.min.js', array(), '20130115', true);
     
     wp_enqueue_script('carousel', get_template_directory_uri() . '/build/js/carousel.min.js', array(jquery), '20130115', true);
-
 
     wp_enqueue_script('smoothScroll', get_template_directory_uri() . '/build/js/smoothScroll.min.js', array('jquery'), '1.0.0', true);
 

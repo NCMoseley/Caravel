@@ -689,16 +689,12 @@ object {
           align-items: center;
   opacity: 0;
   background-color: #fff;
-  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.16), 0 1px 6px rgba(0, 0, 0, 0.23);
-          box-shadow: 0 1px 6px rgba(0, 0, 0, 0.16), 0 1px 6px rgba(0, 0, 0, 0.23);
   -webkit-animation: nav .5s;
           animation: nav .5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-delay: 3.25s;
           animation-delay: 3.25s; }
-  .main-navigation .menu {
-    display: none; }
 
 .header-wrapper {
   width: 80%;
@@ -1344,32 +1340,6 @@ object {
   to {
     -webkit-transform: translateX(-20px);
             transform: translateX(-20px); } }
-
-@-webkit-keyframes navSlide {
-  from {
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
-    opacity: 0; }
-  to {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 0.9; } }
-
-@keyframes navSlide {
-  from {
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
-    opacity: 0; }
-  to {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 0.9; } }
-
-.navSlide {
-  -webkit-animation: navSlide .5s;
-          animation: navSlide .5s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards; }
 
 .contain {
   margin: 0;
