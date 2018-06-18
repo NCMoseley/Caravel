@@ -95,7 +95,10 @@ get_header(); ?>
 				<section class="work-wrapper">
 					<div class="work-carousel">
 
-						<?php get_template_part('template-parts/carousel'); ?>
+
+
+
+						<!-- <?php get_template_part('template-parts/carousel'); ?> -->
 
 					</div>
 				</section>
