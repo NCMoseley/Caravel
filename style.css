@@ -297,7 +297,7 @@ html {
           box-sizing: inherit; }
 
 body {
-  background-color: #191a53;
+  background-color: #fff;
   max-width: 1440px;
   margin: 0 auto; }
 
@@ -957,7 +957,7 @@ object {
 .header-container {
   width: 100%;
   padding: 5%;
-  background-color: #f7f7f7; }
+  background-color: #fff; }
   @media all and (max-width: 650px) {
     .header-container {
       padding-top: 75px; } }
@@ -968,15 +968,15 @@ object {
     letter-spacing: 3px; }
 
 .second-container {
-  background-color: #13143f;
-  padding-right: 5%;
+  margin-left: 5%;
+  background-color: #f7f7f7;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -984,7 +984,7 @@ object {
 
 .dots-container {
   margin-right: 5%;
-  padding: 5rem 0;
+  padding: 0 0 5rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1018,11 +1018,8 @@ object {
 
 .services-container {
   z-index: 1;
-  overflow: hidden;
-  background-size: 100% 250%;
   margin: 0 auto;
   height: 700px;
-  background-color: #fff;
   padding: 5% 8%;
   height: 700px;
   position: relative;
@@ -1033,15 +1030,6 @@ object {
   @media all and (min-width: 800px) {
     .services-container {
       height: 550px; } }
-
-.sliding-background {
-  z-index: -1;
-  position: absolute;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.8)), color-stop(100%, rgba(255, 255, 255, 0.9))), url("../../assets/ship_silhouette_3.jpg") no-repeat;
-  height: 550px;
-  width: 6000px;
-  -webkit-animation: slide 60s linear infinite;
-          animation: slide 60s linear infinite; }
 
 @-webkit-keyframes slide {
   0% {

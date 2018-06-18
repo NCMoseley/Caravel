@@ -14,7 +14,8 @@ html {
 }
 
 body {
-	background-color: lighten($color__navy, 5%);
+	background-color: $color__background-body;
+	// background-color: lighten($color__navy, 5%);
 	max-width: $site__width;
 	margin: 0 auto;
 }

@@ -228,7 +228,7 @@
   }
   width: 100%;
   padding: 5%;
-  background-color: $color__background-screen;
+  background-color: $color__background-body;
   h2 {
     font-family: $font__accent;
     font-size: 3rem;
@@ -239,21 +239,19 @@
 }
 
 .second-container {
-  background-color: $color__navy;
-  padding-right: 5%;
+  margin-left: 5%;
+  background-color: $color__background-screen;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: flex-start;
-  position: relative; // @include medium {
-  //   margin-left: 10%;
-  // }
+  position: relative; 
 }
 
 
 
 .dots-container {
   margin-right: 5%;
-  padding: 5rem 0;
+  padding: 0 0 5rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -285,16 +283,13 @@
 }
 
 
-
-
-
 .services-container {
   z-index: 1;
-  overflow: hidden; // background: url('../../assets/Caravel_ship.jpg') bottom left no-repeat;
-  background-size: 100% 250%; // background-attachment: fixed;
+  // overflow: hidden; // background: url('../../assets/Caravel_ship.jpg') bottom left no-repeat;
+  // background-size: 100% 250%; // background-attachment: fixed;
   margin: 0 auto;
   height: 700px;
-  background-color: $color__background-body;
+  // background-color: $color__background-body;
   padding: 5% 8%;
   height: 700px; // background-color: $color__background-screen;
   position: relative;
@@ -306,14 +301,14 @@
   }
 }
 
-.sliding-background {
-  z-index: -1;
-  position: absolute;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.8)), color-stop(100%, rgba(255, 255, 255, 0.9))), url('../../assets/ship_silhouette_3.jpg') no-repeat;
-  height: 550px;
-  width: 6000px;
-  animation: slide 60s linear infinite; // animation: rotate 10s linear infinite;
-}
+// .sliding-background {
+//   z-index: -1;
+//   position: absolute;
+//   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.8)), color-stop(100%, rgba(255, 255, 255, 0.9))), url('../../assets/ship_silhouette_3.jpg') no-repeat;
+//   height: 550px;
+//   width: 6000px;
+//   animation: slide 60s linear infinite; // animation: rotate 10s linear infinite;
+// }
 
 @keyframes slide {
   0% {
