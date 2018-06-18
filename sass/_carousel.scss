@@ -1,18 +1,45 @@
 $duration: 450ms;
-$tileWidth: 350px;
+$tileWidth: 620px;
 $tileHeight: ($tileWidth / (16/9));
 $iconSize: 50px;
 $growFactor: 1.5; // 1.5 times the original size
 $moveLeft: -($tileWidth * ($growFactor - 1) / 2);
 $moveRight: $tileWidth * ($growFactor - 1);
 .tile {
-  position: relative;
-  display: inline-block;
-  width: $tileWidth;
-  height: 200px;
-  margin-right: 10px;
-  font-size: 20px;
+  // display: inline-block;
+  width: $tileWidth !important;
   cursor: pointer;
-  transition: $duration all;
-  transform-origin: center left;
+  margin-left: 164px;
+  margin-top: 25px;
+  z-index: 1;
+}
+
+.responsive {
+  button.slick-next {
+    position: absolute;
+    right: -150px;
+    top: 57%;
+    z-index: 5;
+  }
+  button.slick-prev {
+    position: absolute;
+    left: 10px;
+    top: 57%;
+    z-index: 5;
+  }
+}
+
+.slider-nav {
+  button.slick-next {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    z-index: 5;
+  }
+  button.slick-prev {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    z-index: 5;
+  }
 }

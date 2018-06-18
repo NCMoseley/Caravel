@@ -80,25 +80,27 @@ get_header(); ?>
 
 
 				<section class="our-work-section">
-					<div class="our-work-header">
-						<h2>Our Work</h2>
-					</div>
-					<!-- <div class="our-work-content">
-						<p>We are a boutique agency that specializes in custom Websites built with WordPress. They are designed to be clean, simple
-							and future proof. We have helped our clients realize their online voice and increased traffic, conversion and ranking.
-							Find out how we can help you. You can view some of our recent projects below.
-						</p>
-					</div> -->
-				</section>
+				<div class="work-wrapper">
 
-				<section class="work-wrapper">
-
-					<div class="laptop"><img src="<?php echo get_template_directory_uri() . '/assets/laptop.jpg'?>" alt="Laptop"></div>
+					<div class="laptop"><img src="<?php echo get_template_directory_uri() . '/assets/laptop.png
+					'?>" alt="Laptop"></div>
 
 					<div class="work-carousel">
 
 						<?php get_template_part('template-parts/carousel'); ?>
 
+					</div>
+				</div>
+
+					<div class="our-work-right">
+					<div class="our-work-header">
+						<h2>Our Work</h2>
+					</div>
+					<div class="our-work-content">
+
+						<?php get_template_part('template-parts/carousel-nav'); ?>
+						
+					</div>
 					</div>
 				</section>
 
@@ -106,6 +108,8 @@ get_header(); ?>
 					<section class="team-wrapper">
 						<h2>The Team</h2>
 						<p>Don't be fooled by the smiles, these Navy Seals of code are not guys you would want to get stuck with in a dark alley.</p>
+						<p>We are a boutique agency that specializes in custom Websites built with WordPress. They are designed to be clean, simple and future proof. We have helped our clients realize their online voice and increased traffic, conversion and ranking. Find out how we can help you. 
+						</p>
 						<div class="team-container">
 							<div class="team-top-row">
 								<div class="team-single">
