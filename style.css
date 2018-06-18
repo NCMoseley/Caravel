@@ -417,6 +417,30 @@ textarea {
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
+.nav-menu-container {
+  width: 100%; }
+  .nav-menu-container ul {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .nav-menu-container ul li {
+      margin: 0 1rem;
+      list-style: none; }
+      .nav-menu-container ul li a {
+        text-decoration: none;
+        color: #000; }
+        .nav-menu-container ul li a:hover {
+          color: #999; }
+        .nav-menu-container ul li a:visited {
+          color: #000; }
+
 /* Links */
 a {
   cursor: pointer;
