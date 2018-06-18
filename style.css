@@ -664,9 +664,6 @@ object {
 .gallery-caption {
   display: block; }
 
-.fp-enabled body {
-  margin: 0 auto !important; }
-
 .header-menu-logo {
   height: 48px;
   width: 200px;
@@ -840,120 +837,6 @@ object {
       .panel1-content {
         text-align: center; } }
 
-@-webkit-keyframes nav {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 0.9; } }
-
-@keyframes nav {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 0.9; } }
-
-@-webkit-keyframes slideup {
-  from {
-    margin-bottom: 0;
-    opacity: 1; }
-  to {
-    margin-bottom: 300px;
-    opacity: 0; } }
-
-@keyframes slideup {
-  from {
-    margin-bottom: 0;
-    opacity: 1; }
-  to {
-    margin-bottom: 300px;
-    opacity: 0; } }
-
-@-webkit-keyframes opacity {
-  from {
-    opacity: 1; }
-  to {
-    opacity: 0; } }
-
-@keyframes opacity {
-  from {
-    opacity: 1; }
-  to {
-    opacity: 0; } }
-
-@-webkit-keyframes h1pseudo {
-  from {
-    width: 0;
-    opacity: 0; }
-  to {
-    width: 100%;
-    opacity: 1; } }
-
-@keyframes h1pseudo {
-  from {
-    width: 0;
-    opacity: 0; }
-  to {
-    width: 100%;
-    opacity: 1; } }
-
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-    bottom: 0; }
-  to {
-    opacity: 1;
-    bottom: 15px; } }
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    bottom: 0; }
-  to {
-    opacity: 1;
-    bottom: 15px; } }
-
-@-webkit-keyframes arrow {
-  from {
-    -webkit-transform: translateX(0);
-            transform: translateX(0); }
-  to {
-    -webkit-transform: translateX(-20px);
-            transform: translateX(-20px); } }
-
-@keyframes arrow {
-  from {
-    -webkit-transform: translateX(0);
-            transform: translateX(0); }
-  to {
-    -webkit-transform: translateX(-20px);
-            transform: translateX(-20px); } }
-
-@-webkit-keyframes navSlide {
-  from {
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
-    opacity: 0; }
-  to {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 0.9; } }
-
-@keyframes navSlide {
-  from {
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
-    opacity: 0; }
-  to {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 0.9; } }
-
-.navSlide {
-  -webkit-animation: navSlide .5s;
-          animation: navSlide .5s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards; }
-
 .header-container {
   width: 100%;
   padding: 5%;
@@ -1014,6 +897,7 @@ object {
       width: 70%;
       margin: 5rem auto; }
     .dots-container .specialization-content .dots-cta-p {
+      width: 245px;
       border-bottom: 1px solid midnightblue; }
 
 .services-container {
@@ -1360,6 +1244,120 @@ object {
   .dont-hesitate-container p {
     font-weight: 100;
     padding: 4%; }
+
+@-webkit-keyframes nav {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 0.9; } }
+
+@keyframes nav {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 0.9; } }
+
+@-webkit-keyframes slideup {
+  from {
+    margin-bottom: 0;
+    opacity: 1; }
+  to {
+    margin-bottom: 300px;
+    opacity: 0; } }
+
+@keyframes slideup {
+  from {
+    margin-bottom: 0;
+    opacity: 1; }
+  to {
+    margin-bottom: 300px;
+    opacity: 0; } }
+
+@-webkit-keyframes opacity {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+
+@keyframes opacity {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+
+@-webkit-keyframes h1pseudo {
+  from {
+    width: 0;
+    opacity: 0; }
+  to {
+    width: 100%;
+    opacity: 1; } }
+
+@keyframes h1pseudo {
+  from {
+    width: 0;
+    opacity: 0; }
+  to {
+    width: 100%;
+    opacity: 1; } }
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+    bottom: 0; }
+  to {
+    opacity: 1;
+    bottom: 15px; } }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    bottom: 0; }
+  to {
+    opacity: 1;
+    bottom: 15px; } }
+
+@-webkit-keyframes arrow {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); }
+  to {
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px); } }
+
+@keyframes arrow {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); }
+  to {
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px); } }
+
+@-webkit-keyframes navSlide {
+  from {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+    opacity: 0; }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 0.9; } }
+
+@keyframes navSlide {
+  from {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+    opacity: 0; }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 0.9; } }
+
+.navSlide {
+  -webkit-animation: navSlide .5s;
+          animation: navSlide .5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
 
 .contain {
   margin: 0;
