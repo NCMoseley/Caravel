@@ -65,6 +65,24 @@ get_header(); ?>
 				</section>
 
 
+
+
+
+				<section class="dots-container">
+					<div class="dots">
+						<img src="<?php echo get_template_directory_uri() . '/assets/3dots.png'?>" alt="Three dots">
+					</div>
+					<div class="specialization-content">
+						<div class="specialization-content-wrapper">
+							<p>We specialize in custom Websites built with WordPress. They are designed to be clean, simple
+								and future proof. We have helped our clients realize their online voice and increase traffic, conversion and ranking.</p>
+							<p class="dots-cta-p">Find out how we can help you. </p>
+						</div>
+					</div>
+				</section>
+
+
+
 				<section class="second-container">
 					<div class="services-container">
 						<div class="sliding-background"></div>
