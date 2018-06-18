@@ -762,7 +762,7 @@ object {
       width: 0;
       bottom: -10px;
       left: 0;
-      background-color: #13143f;
+      background-color: #000;
       -webkit-animation-name: h1pseudo;
               animation-name: h1pseudo;
       -webkit-animation-duration: .7s;
@@ -840,7 +840,7 @@ object {
 
 .header-container {
   width: 100%;
-  padding: 5%;
+  padding: 10rem 5%;
   background-color: #fff; }
   @media all and (max-width: 650px) {
     .header-container {
@@ -1068,7 +1068,7 @@ object {
   width: 100%; }
 
 .team-background {
-  background-color: #13143f; }
+  background-color: #000; }
 
 .team-wrapper {
   margin-right: 5%;
@@ -1168,14 +1168,14 @@ object {
       width: 90%; } }
 
 .position {
-  color: #13143f;
+  color: #000;
   font-weight: 100; }
 
 .our-work-section {
-  background-color: #13143f; }
+  background-color: #000; }
 
 .our-work-header {
-  background-color: #13143f;
+  background-color: #000;
   font-family: "Playfair Display", Times, serif;
   font-size: 2rem;
   text-align: center;
@@ -1217,12 +1217,12 @@ object {
   width: 100%;
   overflow: hidden;
   max-height: 900px;
-  background-color: #13143f; }
+  background-color: #000; }
   .work-carousel .contain {
-    background-color: #13143f; }
+    background-color: #000; }
 
 .dont-hesitate-container {
-  background-color: #13143f;
+  background-color: #000;
   color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
