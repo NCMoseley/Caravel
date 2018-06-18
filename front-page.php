@@ -2,7 +2,7 @@
 /**
  * The main template file.
  *
- * @package RED_Starter_Theme
+ * @package Caravel_Web_Theme
  */
 
 get_header(); ?>
@@ -13,8 +13,9 @@ get_header(); ?>
 
 			<!-- FULLPAGE BEGINS HERE  -->
 
-			<div class="fullpage" id="fullpage">
 
+			<!-- <div class="<?php echo wp_is_mobile() ? 'mobilepage' : 'fullpage'; ?>" id="<?php echo wp_is_mobile() ? 'mobilepage' : 'fullpage'; ?>"> -->
+			<div class="fullpage" id="fullpage">
 				<section class="section panel1">
 					<div class="header-wrapper">
 						<div class="header">
@@ -26,8 +27,7 @@ get_header(); ?>
 							<h1>Caravel!</h1>
 						</div>
 						<div class="panel1-content">
-							<p>We build modern websites for modern businesses and individuals. No fluff, no over design, no bloat. Fast, elegant,
-								and precisely what you need. We will get you where you want to be. <strong>Set sail!</strong>
+							<p>We build modern websites for modern businesses and individuals. No fluff, no over design, no bloat. Fast, elegant, and precisely what you need. We will get you where you want to be. <strong>Set sail!</strong>
 							</p>
 						</div>
 					</div>

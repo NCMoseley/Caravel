@@ -1,5 +1,6 @@
-body {
-  background-color: $color__navy;
+.fp-enabled body {
+  //  Center entire page when width is greater than $site__width
+  margin: 0 auto !important;
 }
 
 .header-menu-logo {
@@ -9,20 +10,21 @@ body {
   background: url('../../assets/Caravel-logo.png');
   background-size: contain;
   background-repeat: no-repeat;
-  color: black; // position: fixed;
+  color: $color__text-main; // position: fixed;
   // top: 26px;
   // left: 128px;
   // z-index: 1000;
 }
 
 .main-navigation {
-  height: 75px;
+  height: $navigtion__height;
+  max-width: $site__width;
   position: fixed;
   z-index: 10;
   display: flex;
   align-items: center;
   opacity: 0;
-  background-color: #fff;
+  background-color: $color__background-body;
   box-shadow: 0 1px 6px rgba(0, 0, 0, .16), 0 1px 6px rgba(0, 0, 0, .23);
   animation: nav .5s;
   animation-fill-mode: forwards;
@@ -33,6 +35,9 @@ body {
 }
 
 .header-wrapper {
+  @media all and (max-width: 650px) {
+    width: 100%;
+  }
   width: 80%;
   margin: auto;
   display: flex;
@@ -42,12 +47,15 @@ body {
 }
 
 .panel1 {
+  @media all and (max-width: 650px) {
+    padding-top: $navigtion__height;
+  }
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #f7f7f7;
-  color: #333;
+  background-color: $color__background-screen;
+  color: $color__text-main;
   position: relative;
   z-index: 2;
   h1 {
@@ -104,6 +112,9 @@ body {
     }
   }
   .header {
+    @media all and (max-width: 650px) {
+      max-width: 300px;
+    }
     margin: 1rem auto;
     display: flex;
     flex-direction: column;
@@ -111,6 +122,9 @@ body {
     align-items: center;
   }
   &-content {
+    @media all and (max-width: 650px) {
+      text-align: center;
+    }
     opacity: 0;
     width: 90%;
     margin: 2rem auto;
@@ -228,11 +242,13 @@ body {
   from {
     transform: translateY(-100px);
     opacity: 0
-  };
+  }
+  ;
   to {
     transform: translateY(0);
     opacity: 0.9;
-  };
+  }
+  ;
 }
 
 .navSlide {
@@ -240,12 +256,22 @@ body {
   animation-fill-mode: forwards;
 }
 
+<<<<<<< HEAD
 
+=======
+.navSlideReverse {
+  animation: navSlide .5s;
+  animation-direction: reverse;
+}
+>>>>>>> 29ff77b061f52750218ccdf9d0970dbfb9299991
 
 .header-container {
+  @media all and (max-width: 650px) {
+    padding-top: $navigtion__height;
+  }
   width: 100%;
   padding: 5%;
-  background-color: #f7f7f7;
+  background-color: $color__background-screen;
   h2 {
     font-family: $font__accent;
     font-size: 3rem;
@@ -256,11 +282,11 @@ body {
 }
 
 .second-container {
-  margin-right: 5%;
+  background-color: $color__navy;
+  padding-right: 5%;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  background-color: #f7f7f7; //
   position: relative; // @include medium {
   //   margin-left: 10%;
   // }
@@ -272,9 +298,9 @@ body {
   background-size: 100% 250%; // background-attachment: fixed;
   margin: 0 auto;
   height: 700px;
-  background-color: #fff;
+  background-color: $color__background-body;
   padding: 5% 8%;
-  height: 700px; // background-color: #f7f7f7;
+  height: 700px; // background-color: $color__background-screen;
   position: relative;
   padding: 8%;
   padding-top: 2%;
@@ -334,7 +360,7 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background: #fff;
+  background: $color__background-body;
   padding-bottom: 40px;
   @include medium {
     width: 50%;
@@ -411,9 +437,12 @@ body {
 }
 
 .team-wrapper {
+  @media all and (max-width: 950px) {
+    padding: 5% 0;
+  }
   margin-right: 5%;
-  padding: 5% 8%;
-  background-color: #f7f7f7;
+  padding: 5% 1%;
+  background-color: $color__background-screen;
   h2 {
     margin: 0;
     padding: 20px;
@@ -428,14 +457,6 @@ body {
 }
 
 .team-container {
-  // @include tablet {
-  //   background: url('../../assets/3dots.png');
-  //   background-size: auto;
-  //   background-repeat: no-repeat;
-  //   background-position: unset;
-  //   background-position-y: 63%;
-  //   background-position-x: 9%;
-  // }
   p {
     margin: 0 auto;
     max-width: 100%;
@@ -447,23 +468,87 @@ body {
 }
 
 .team-top-row {
+  @include desktop {
+    background: url('../../assets/3dots.png');
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: unset;
+    background-position-y: 40%;
+    background-position-x: 94%;
+    z-index: 10;
+  }
   display: flex;
   justify-content: space-around;
+  @media all and (max-width: 650px) {
+    padding-right: 0;
+    padding: 0;
+  }
+  @media all and (min-width: 650px) {
+    padding-right: 5%;
+  }
+  @media all and (min-width: 950px) {
+    padding-right: 15%;
+  }
   flex-direction: row;
   flex-wrap: wrap;
+<<<<<<< HEAD
   padding-right: 15%;
+=======
+  img {
+    opacity: 0;
+    #Sean {
+      transform: translate(-750px, -100px) rotate(-70deg);
+    }
+    #Nate {
+      transform: translate(850px, -100px) rotate(90deg);
+    }
+  }
+>>>>>>> 29ff77b061f52750218ccdf9d0970dbfb9299991
 }
 
 .team-second-row {
+  @include desktop {
+    background: url('../../assets/3dots.png');
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: unset;
+    background-position-y: 40%;
+    background-position-x: 6%;
+  }
   display: flex;
   justify-content: space-around;
+  @media all and (max-width: 650px) {
+    padding-right: 0;
+    padding: 0;
+  }
+  @media all and (min-width: 650px) {
+    padding-left: 5%;
+  }
+  @media all and (min-width: 950px) {
+    padding-left: 15%;
+  }
   flex-direction: row;
   flex-wrap: wrap;
+<<<<<<< HEAD
   padding-left: 15%;
+=======
+  img {
+    opacity: 0;
+    #Colin {
+      transform: translate(-850px, -100px) rotate(-70deg);
+    }
+    #Ilya {
+      transform: translate(850px, -100px) rotate(90deg);
+    }
+  }
+>>>>>>> 29ff77b061f52750218ccdf9d0970dbfb9299991
 }
 
 
 .team-single {
+  @media all and (max-width: 650px) {
+    width: 90%;
+  }
   width: 40%;
   padding: 5%;
 }
@@ -473,11 +558,16 @@ body {
   font-weight: 100;
 }
 
+.our-work-section {
+  background-color: $color__navy;
+}
+
 .our-work-header {
+  background-color: $color__navy;
   font-family: $font__accent;
   font-size: 2rem;
   text-align: center;
-  color: #fff;
+  color: $color__text-light;
   position: relative;
   &:after {
     content: '';
@@ -487,7 +577,11 @@ body {
     bottom: -10px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #fff;
+    background-color: $color__background-body;
+  }
+  h2 {
+    margin: 0;
+    padding: 20px 0;
   }
 }
 
@@ -512,7 +606,7 @@ body {
   width: 100%;
   overflow: hidden;
   max-height: 900px;
-  background-color: black; // padding-top: 64px;
+  background-color: $color__navy; // padding-top: 64px;
   @media screen and (min-width: 800px) {
     // width: 75%;
   }
@@ -521,29 +615,6 @@ body {
   }
 }
 
-.owl-prev {
-  background-color: white;
-} // .our-work-container {
-//   width: 100%;
-//   background-color: #000;
-//   display: flex;
-//   justify-content: flex-start;
-//   align-items: center;
-//   flex-direction: column;
-//   padding: 35px;
-//   @media screen and (min-width: 800px) {
-//     width: 25%;
-//   }
-//   h2 {
-//     color: #fff;
-//     font-family: 'Playfair Display', serif;
-//   }
-//   p {
-//     color: #f7f7f7;
-//     font-weight: 100;
-//     text-align: center;
-//   }
-// }
 .dont-hesitate-container {
   background-color: $color__navy;
   color: #fff;

@@ -3,46 +3,50 @@ jQuery(document).ready(function ($) {
 
   var waypoint = new Waypoint({
     element: document.getElementById('Sean'),
-    handler: function() {
+    handler: function () {
       this.element.classList.add('slide-in-left');
-    }, 
+    },
     offset: 400
   })
   var waypoint2 = new Waypoint({
     element: document.getElementById('Nate'),
-    handler: function() {
+    handler: function () {
       this.element.classList.add('slide-in-right');
-    }, 
+    },
     offset: 400
   })
   var waypoint3 = new Waypoint({
     element: document.getElementById('Colin'),
-    handler: function() {
+    handler: function () {
       this.element.classList.add('slide-in-left');
-    }, 
-    offset: 400 
+    },
+    offset: 400
   })
   var waypoint4 = new Waypoint({
     element: document.getElementById('Ilya'),
-    handler: function() {
+    handler: function () {
       this.element.classList.add('slide-in-right');
-    }, 
+    },
     offset: 400
   })
 
   var lastScrollTop = 0;
-  window.addEventListener("scroll", function(){ 
+  window.addEventListener("scroll", function () {
     var scrollTop = window.pageYOffset;
+<<<<<<< HEAD
     if (scrollTop > lastScrollTop){
         nav.classList.remove('navSlide');
+=======
+    if (scrollTop > lastScrollTop) {
+      nav.classList.remove('navSlide');
+>>>>>>> 29ff77b061f52750218ccdf9d0970dbfb9299991
     } else {
-      console.log('going up')
       nav.classList.add('navSlide');
     }
     lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
   }, false);
 
-  
+
 
   $('#fullpage').fullpage({
     // anchors:['firstPage', 'secondPage'],

@@ -2,7 +2,7 @@
 /**
  * Template part for displaying a message that posts cannot be found.
  *
- * @package RED_Starter_Theme
+ * @package Caravel_Web_Theme
  */
 
 ?>
@@ -19,9 +19,8 @@
 
           
             <div class="tile">
-              
               <div class="tile__media">
-                <img class="tile__img" alt="hummingbird-photo" src="<?php echo get_template_directory_uri() . '/assets/Hummingbird.png'?>"
+                <img class="tile__img" alt="hummingbird-photo" src="<?php echo get_template_directory_uri() . '/assets/Hummingbird-Blur.jpg'?>" data-src="<?php echo get_template_directory_uri() . '/assets/Hummingbird.jpg'?>"
                 />
               </div>
              <a href="https://volunteer.hummingbirdnetwork.com" target="_blank">
@@ -35,7 +34,7 @@
           
              <div class="tile">
               <div class="tile__media">
-                <img class="tile__img" alt="packwest-photo" src="<?php echo get_template_directory_uri() . '/assets/PacWest.png'?>" />
+                <img class="tile__img" alt="packwest-photo" src="<?php echo get_template_directory_uri() . '/assets/PacWest-Blur.jpg'?>" data-src="<?php echo get_template_directory_uri() . '/assets/PacWest.jpg'?>" />
               </div>
               <a href="https://pacwestcanopy.com/" target="_blank">
               <div class="tile__details">
@@ -48,7 +47,7 @@
           
             <div class="tile">
               <div class="tile__media">
-                <img class="tile__img" alt="valo-photo" src="<?php echo get_template_directory_uri() . '/assets/Valo.png'?>" />
+                <img class="tile__img" alt="valo-photo" src="<?php echo get_template_directory_uri() . '/assets/Valo-Blur.jpg'?>" data-src="<?php echo get_template_directory_uri() . '/assets/Valo.jpg'?>" />
               </div>
               <a href="https://valosmartcity.com/" target="_blank">
               <div class="tile__details">
@@ -61,7 +60,7 @@
 
             <div class="tile">
               <div class="tile__media">
-                <img class="tile__img" alt="nexus-photo" src="<?php echo get_template_directory_uri() . '/assets/Nexus.png'?>" />
+                <img class="tile__img" alt="nexus-photo" src="<?php echo get_template_directory_uri() . '/assets/Nexus-Blur.jpg'?>" data-src="<?php echo get_template_directory_uri() . '/assets/Nexus.jpg'?>" />
               </div>
               <a href="http://nexus.van.cp.academy.red/" target="_blank">
               <div class="tile__details">
