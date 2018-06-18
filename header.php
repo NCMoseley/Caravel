@@ -22,14 +22,8 @@
 
 			<header id="masthead" class="site-header" role="banner">
 			
-<<<<<<< HEAD
-			
-				<nav id="site-navigation" class="main-navigation" role="navigation">
-				<div class="header-menu-logo"></div>
-=======
 				<nav id="site-navigation" class="main-navigation navSlide" role="navigation">
 				<a href="<?php echo esc_url(home_url('/')); ?>" <div class="header-menu-logo"></div></a>
->>>>>>> 29ff77b061f52750218ccdf9d0970dbfb9299991
 				
 					<?php wp_nav_menu(array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' )); ?>
 				</nav><!-- #site-navigation -->
