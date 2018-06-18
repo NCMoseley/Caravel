@@ -419,7 +419,17 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  cursor: pointer; }
+  cursor: pointer;
+  text-decoration: none !important;
+  color: #404040; }
+  a:visited {
+    color: #404040; }
+  a:hover, a:focus, a:active {
+    color: midnightblue; }
+  a:focus {
+    outline: thin dotted; }
+  a:hover, a:active {
+    outline: 0; }
 
 /* Menus */
 .main-navigation {

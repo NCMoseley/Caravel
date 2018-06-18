@@ -24,18 +24,18 @@ jQuery(document).ready(function ($) {
   //   console.log(scrollY)
   // })
 
-  if (window.scrollY <= 50) {
-    setTimeout(function () {
-      var offset = 0;
-      var target = $('.header-container');
-      var scrollTo = $(target).offset().top + offset;
-      $('html, body').animate({
-          scrollTop: scrollTo
-        },
-        2000
-      );
-    }, 7000);
-  }
+  // if (window.scrollY <= 50) {
+  //   setTimeout(function () {
+  //     var offset = 0;
+  //     var target = $('.header-container');
+  //     var scrollTo = $(target).offset().top + offset;
+  //     $('html, body').animate({
+  //         scrollTop: scrollTo
+  //       },
+  //       2000
+  //     );
+  //   }, 7000);
+  // }
 
   if ($('body').hasClass('home')) {
     $('a[href*=#]').bind('click', function (e) {
