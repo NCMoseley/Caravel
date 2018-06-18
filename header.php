@@ -24,7 +24,7 @@
 			<header id="masthead" class="site-header" role="banner">
 			
 			
-				<nav id="site-navigation" class="main-navigation navSlide" role="navigation">
+				<nav id="site-navigation" class="main-navigation" role="navigation">
 				<div class="header-menu-logo"></div>
 				
 					<?php wp_nav_menu(array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' )); ?>

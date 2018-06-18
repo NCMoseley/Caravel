@@ -34,7 +34,6 @@ jQuery(document).ready(function ($) {
   window.addEventListener("scroll", function(){ 
     var scrollTop = window.pageYOffset;
     if (scrollTop > lastScrollTop){
-        console.log('going down')
         nav.classList.remove('navSlide');
     } else {
       console.log('going up')

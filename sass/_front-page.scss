@@ -224,32 +224,6 @@ body {
   ;
 }
 
-@keyframes slide-left {
-  from {
-    transform: translate(-850px, -100px) rotate(-70deg);
-    opacity: 0;
-  }
-  ;
-  to {
-    transform: translate(0, 0) rotate(0);
-    opacity: 1;
-  }
-  ;
-}
-
-@keyframes slide-right {
-  from {
-    transform: translate(850px, -100px) rotate(90deg);
-    opacity: 0;
-  }
-  ;
-  to {
-    transform: translate(0, 0) rotate(0);
-    opacity: 1;
-  }
-  ;
-}
-
 @keyframes navSlide {
   from {
     transform: translateY(-100px);
@@ -265,15 +239,6 @@ body {
   animation: navSlide .5s;
   animation-fill-mode: forwards;
 }
-
-.navSlideReverse {
-  animation: navSlide .5s;
-  animation-direction: reverse;
-}
-
-
-
-
 
 
 
@@ -487,15 +452,6 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   padding-right: 15%;
-  img {
-    opacity: 0;
-    #Sean {
-      transform: translate(-750px, -100px) rotate(-70deg);
-    }
-    #Nate {
-      transform: translate(850px, -100px) rotate(90deg);
-    }
-  }
 }
 
 .team-second-row {
@@ -504,29 +460,8 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   padding-left: 15%;
-  img {
-    opacity: 0;
-    #Colin {
-      transform: translate(-850px, -100px) rotate(-70deg);
-    }
-    #Ilya {
-      transform: translate(850px, -100px) rotate(90deg);
-    }
-  }
 }
 
-.slide-in-left {
-  animation: slide-left .5s;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-in-out;
-}
-
-.slide-in-right {
-  animation: slide-right .5s;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-in-out;
-  animation-delay: .1s;
-}
 
 .team-single {
   width: 40%;
