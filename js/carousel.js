@@ -33,13 +33,8 @@ jQuery(document).ready(function ($) {
   var lastScrollTop = 0;
   window.addEventListener("scroll", function () {
     var scrollTop = window.pageYOffset;
-<<<<<<< HEAD
     if (scrollTop > lastScrollTop){
         nav.classList.remove('navSlide');
-=======
-    if (scrollTop > lastScrollTop) {
-      nav.classList.remove('navSlide');
->>>>>>> 29ff77b061f52750218ccdf9d0970dbfb9299991
     } else {
       nav.classList.add('navSlide');
     }

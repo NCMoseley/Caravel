@@ -256,15 +256,6 @@
   animation-fill-mode: forwards;
 }
 
-<<<<<<< HEAD
-
-=======
-.navSlideReverse {
-  animation: navSlide .5s;
-  animation-direction: reverse;
-}
->>>>>>> 29ff77b061f52750218ccdf9d0970dbfb9299991
-
 .header-container {
   @media all and (max-width: 650px) {
     padding-top: $navigtion__height;
@@ -491,19 +482,7 @@
   }
   flex-direction: row;
   flex-wrap: wrap;
-<<<<<<< HEAD
   padding-right: 15%;
-=======
-  img {
-    opacity: 0;
-    #Sean {
-      transform: translate(-750px, -100px) rotate(-70deg);
-    }
-    #Nate {
-      transform: translate(850px, -100px) rotate(90deg);
-    }
-  }
->>>>>>> 29ff77b061f52750218ccdf9d0970dbfb9299991
 }
 
 .team-second-row {
@@ -529,19 +508,7 @@
   }
   flex-direction: row;
   flex-wrap: wrap;
-<<<<<<< HEAD
   padding-left: 15%;
-=======
-  img {
-    opacity: 0;
-    #Colin {
-      transform: translate(-850px, -100px) rotate(-70deg);
-    }
-    #Ilya {
-      transform: translate(850px, -100px) rotate(90deg);
-    }
-  }
->>>>>>> 29ff77b061f52750218ccdf9d0970dbfb9299991
 }
 
 

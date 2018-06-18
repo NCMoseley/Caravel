@@ -1250,11 +1250,8 @@ object {
       -ms-flex-direction: row;
           flex-direction: row;
   -ms-flex-wrap: wrap;
-<<<<<<< HEAD
       flex-wrap: wrap;
   padding-right: 15%; }
-=======
-      flex-wrap: wrap; }
   @media all and (min-width: 1000px) {
     .team-top-row {
       background: url("../../assets/3dots.png");
@@ -1274,15 +1271,6 @@ object {
   @media all and (min-width: 950px) {
     .team-top-row {
       padding-right: 15%; } }
-  .team-top-row img {
-    opacity: 0; }
-    .team-top-row img #Sean {
-      -webkit-transform: translate(-750px, -100px) rotate(-70deg);
-              transform: translate(-750px, -100px) rotate(-70deg); }
-    .team-top-row img #Nate {
-      -webkit-transform: translate(850px, -100px) rotate(90deg);
-              transform: translate(850px, -100px) rotate(90deg); }
->>>>>>> 29ff77b061f52750218ccdf9d0970dbfb9299991
 
 .team-second-row {
   display: -webkit-box;
@@ -1295,11 +1283,8 @@ object {
       -ms-flex-direction: row;
           flex-direction: row;
   -ms-flex-wrap: wrap;
-<<<<<<< HEAD
       flex-wrap: wrap;
   padding-left: 15%; }
-=======
-      flex-wrap: wrap; }
   @media all and (min-width: 1000px) {
     .team-second-row {
       background: url("../../assets/3dots.png");
@@ -1318,33 +1303,6 @@ object {
   @media all and (min-width: 950px) {
     .team-second-row {
       padding-left: 15%; } }
-  .team-second-row img {
-    opacity: 0; }
-    .team-second-row img #Colin {
-      -webkit-transform: translate(-850px, -100px) rotate(-70deg);
-              transform: translate(-850px, -100px) rotate(-70deg); }
-    .team-second-row img #Ilya {
-      -webkit-transform: translate(850px, -100px) rotate(90deg);
-              transform: translate(850px, -100px) rotate(90deg); }
-
-.slide-in-left {
-  -webkit-animation: slide-left .5s;
-          animation: slide-left .5s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out; }
-
-.slide-in-right {
-  -webkit-animation: slide-right .5s;
-          animation: slide-right .5s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-  -webkit-animation-delay: .1s;
-          animation-delay: .1s; }
->>>>>>> 29ff77b061f52750218ccdf9d0970dbfb9299991
 
 .team-single {
   width: 40%;
