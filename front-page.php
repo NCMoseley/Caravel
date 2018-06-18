@@ -44,28 +44,24 @@ get_header(); ?>
 					</div>
 				</section>
 
-				<section class="our-work-section">
-					<div class="our-work-header">
-						<h2>Our Work</h2>
-					</div>
-					<!-- <div class="our-work-content">
-						<p>We are a boutique agency that specializes in custom Websites built with WordPress. They are designed to be clean, simple
-							and future proof. We have helped our clients realize their online voice and increased traffic, conversion and ranking.
-							Find out how we can help you. You can view some of our recent projects below.
-						</p>
-					</div> -->
-				</section>
 
-				<section class="work-wrapper">
-					<div class="work-carousel">
 
-						<?php get_template_part('template-parts/carousel'); ?>
-
-					</div>
-				</section>
 
 
 				<section class="second-container">
+					<div class="dots-container">
+						<div class="dots">
+							<img src="<?php echo get_template_directory_uri() . '/assets/3dots.png'?>" alt="Three dots">
+						</div>
+						<div class="specialization-content">
+							<div class="specialization-content-wrapper">
+								<p>We specialize in custom Websites built with WordPress. They are designed to be clean, simple
+									and future proof. We have helped our clients realize their online voice and increase traffic, conversion and ranking.</p>
+								<p class="dots-cta-p">Find out how we can help you. </p>
+							</div>
+						</div>
+					</div>
+
 					<div class="services-container">
 						<div class="sliding-background"></div>
 						<span class="title-paragraph-container">
@@ -95,6 +91,29 @@ get_header(); ?>
 								</div>
 							</div>
 						</div>
+				</section>
+
+
+
+
+				<section class="our-work-section">
+					<div class="our-work-header">
+						<h2>Our Work</h2>
+					</div>
+					<!-- <div class="our-work-content">
+						<p>We are a boutique agency that specializes in custom Websites built with WordPress. They are designed to be clean, simple
+							and future proof. We have helped our clients realize their online voice and increased traffic, conversion and ranking.
+							Find out how we can help you. You can view some of our recent projects below.
+						</p>
+					</div> -->
+				</section>
+
+				<section class="work-wrapper">
+					<div class="work-carousel">
+
+						<?php get_template_part('template-parts/carousel'); ?>
+
+					</div>
 				</section>
 
 				<div class="team-background">
