@@ -36,9 +36,11 @@ get_header(); ?>
 						</div>
 						<div class="specialization-content">
 							<div class="specialization-content-wrapper">
-								<p>We specialize in custom Websites built with WordPress. They are designed to be clean, simple
-									and future proof. We have helped our clients realize their online voice and increase traffic, conversion and ranking.</p>
-								<a href="#contact"><p class="dots-cta-p">Find out how we can help you. </p></a>
+								<p>We specialize in custom Websites built with WordPress. They are designed to be clean, simple and future proof. We
+									have helped our clients realize their online voice and increase traffic, conversion and ranking.</p>
+								<a href="#contact">
+									<p class="dots-cta-p">Find out how we can help you. </p>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -90,12 +92,12 @@ get_header(); ?>
 				</section>
 
 				<section class="work-wrapper">
+
+					<div class="laptop"><img src="<?php echo get_template_directory_uri() . '/assets/laptop.jpg'?>" alt="Laptop"></div>
+
 					<div class="work-carousel">
 
-
-
-
-						<!-- <?php get_template_part('template-parts/carousel'); ?> -->
+						<?php get_template_part('template-parts/carousel'); ?>
 
 					</div>
 				</section>

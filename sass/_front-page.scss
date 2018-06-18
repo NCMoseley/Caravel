@@ -20,9 +20,6 @@
   animation: nav .5s;
   animation-fill-mode: forwards;
   animation-delay: 3.25s;
-  .menu {
-    // display: none;
-  }
 }
 
 .header-wrapper {
@@ -464,16 +461,8 @@
   @media screen and (min-width: 800px) {
     flex-direction: row;
   }
-} // .laptop-container {
-//   // width: 75%;
-//   background: url('../../assets/macbook.jpg');
-//   background-size: auto;
-//   background-repeat: no-repeat;
-//   background-position: unset; // background-position-x: 56px;
-//   // background-position-y: 850px;
-//   background-position-y: 63%;
-//   background-position-x: 9%;
-// }
+}
+
 .work-carousel {
   width: 100%;
   overflow: hidden;
