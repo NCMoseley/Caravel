@@ -1010,7 +1010,7 @@ object {
     font-weight: 100;
     max-width: 70%; }
   .box2 span {
-    color: #13143f; }
+    color: #171acc; }
 
 .title-paragraph-container {
   display: -webkit-box;
@@ -1056,12 +1056,16 @@ object {
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  letter-spacing: -1px; }
+  @media all and (min-width: 350px) {
+    .bullet-point {
+      letter-spacing: 1px; } }
 
 .bullet-blue-line {
   height: 3px;
   width: 10px;
-  background-color: #13143f;
+  background-color: #171acc;
   margin-right: 10px; }
 
 .photo-container img {
@@ -1081,8 +1085,8 @@ object {
     margin: 0;
     padding: 20px;
     font-family: "Playfair Display", Times, serif;
-    font-weight: 700;
-    text-align: left;
+    font-weight: 200;
+    text-align: center;
     font-size: 3rem; }
   .team-wrapper p {
     margin: 0 0 0 3%; }
