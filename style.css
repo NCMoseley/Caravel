@@ -845,7 +845,7 @@ object {
   @media all and (max-width: 650px) {
     .header-container {
       padding-top: 75px; } }
-  .header-container h2 {
+  .header-container h1 {
     font-family: "Playfair Display", Times, serif;
     font-size: 3rem; }
   .header-container p {
