@@ -148,12 +148,14 @@
 }
 
 .second-container {
-  margin-left: 5%;
   background-color: $color__background-screen;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   position: relative;
+  @media all and (min-width: $tablet) {
+    margin-left: 5%;
+  }
 }
 
 .dots-container {
@@ -178,8 +180,11 @@
       margin: 5rem auto;
     }
     .dots-cta-p {
-      width: 245px;
+      width: auto;
       border-bottom: 1px solid midnightblue;
+      @media all and (min-width: $tablet) {
+        width: 245px;
+      }
     }
   }
 }
@@ -330,12 +335,12 @@
 }
 
 .team-wrapper {
-  @media all and (max-width: 950px) {
-    padding: 5% 0;
-  }
-  margin-right: 5%;
   padding: 5% 1%;
   background-color: $color__background-screen;
+  @media all and (min-width: $tablet) {
+    margin-right: 5%;
+    padding: 5% 0;
+  }
   h2 {
     margin: 0;
     padding: 20px;
