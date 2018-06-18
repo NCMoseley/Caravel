@@ -852,7 +852,6 @@ object {
     letter-spacing: 3px; }
 
 .second-container {
-  margin-left: 5%;
   background-color: #f7f7f7;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -865,6 +864,9 @@ object {
       -ms-flex-pack: start;
           justify-content: flex-start;
   position: relative; }
+  @media all and (min-width: 600px) {
+    .second-container {
+      margin-left: 5%; } }
 
 .dots-container {
   margin-right: 5%;
@@ -898,8 +900,11 @@ object {
       width: 70%;
       margin: 5rem auto; }
     .dots-container .specialization-content .dots-cta-p {
-      width: 245px;
+      width: auto;
       border-bottom: 1px solid midnightblue; }
+      @media all and (min-width: 600px) {
+        .dots-container .specialization-content .dots-cta-p {
+          width: 245px; } }
 
 .services-container {
   z-index: 1;
@@ -1071,11 +1076,11 @@ object {
   background-color: #000; }
 
 .team-wrapper {
-  margin-right: 5%;
   padding: 5% 1%;
   background-color: #f7f7f7; }
-  @media all and (max-width: 950px) {
+  @media all and (min-width: 600px) {
     .team-wrapper {
+      margin-right: 5%;
       padding: 5% 0; } }
   .team-wrapper h2 {
     margin: 0;
