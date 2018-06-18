@@ -5,7 +5,7 @@
   background: url('../../assets/Caravel-logo.png');
   background-size: contain;
   background-repeat: no-repeat;
-  color: $color__text-main; 
+  color: $color__text-main;
 }
 
 .main-navigation {
@@ -152,7 +152,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  position: relative; 
+  position: relative;
   @media all and (min-width: $tablet) {
     margin-left: 5%;
   }
@@ -164,7 +164,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
   .dots {
     height: 19rem;
     width: 100%;
@@ -174,36 +173,27 @@
     align-items: center;
     background-color: $color__background-screen;
   }
-
   .specialization-content {
     background-color: $color__background-body;
-    
     &-wrapper {
       width: 70%;
       margin: 5rem auto;
     }
-
     .dots-cta-p {
       width: auto;
-      border-bottom: 1px solid midnightblue;
+      border-bottom: 2px solid $color__navy;
       @media all and (min-width: $tablet) {
         width: 245px;
       }
-
     }
   }
-
-
 }
 
-
 .services-container {
-  z-index: 1;
-  // overflow: hidden; // background: url('../../assets/Caravel_ship.jpg') bottom left no-repeat;
+  z-index: 1; // overflow: hidden; // background: url('../../assets/Caravel_ship.jpg') bottom left no-repeat;
   // background-size: 100% 250%; // background-attachment: fixed;
   margin: 0 auto;
-  height: 700px;
-  // background-color: $color__background-body;
+  height: 700px; // background-color: $color__background-body;
   padding: 5% 8%;
   height: 700px; // background-color: $color__background-screen;
   position: relative;
@@ -223,7 +213,6 @@
 //   width: 6000px;
 //   animation: slide 60s linear infinite; // animation: rotate 10s linear infinite;
 // }
-
 @keyframes slide {
   0% {
     transform: translate3d(1400px, 0, 0);
@@ -322,10 +311,14 @@
 .bullet-point {
   display: flex;
   align-items: center;
+  letter-spacing: -1px;
+  @media all and (min-width: 350px) {
+    letter-spacing: 1px;
+  }
 }
 
 .bullet-blue-line {
-  height: 3px;
+  height: 2px;
   width: 10px;
   background-color: $color__navy;
   margin-right: 10px;
@@ -348,13 +341,12 @@
     margin-right: 5%;
     padding: 5% 0;
   }
-
   h2 {
     margin: 0;
     padding: 20px;
     font-family: $font__accent;
-    font-weight: 700;
-    text-align: left; 
+    font-weight: 200;
+    text-align: center; // margin-left: 20%;
     font-size: 3rem;
   }
   p {
@@ -426,7 +418,6 @@
   padding-left: 15%;
 }
 
-
 .team-single {
   @media all and (max-width: 650px) {
     width: 90%;
@@ -436,7 +427,7 @@
 }
 
 .position {
-  color: #000;
+  color: $color__navy;
   font-weight: 100;
 }
 
@@ -515,10 +506,6 @@
     padding: 4%;
   }
 }
-
-
-
-
 
 @keyframes nav {
   from {

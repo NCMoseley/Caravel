@@ -97,9 +97,6 @@ function caravel_web_scripts()
 
     wp_enqueue_script('red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true);
 
-    // wp_enqueue_script('fullpage-js', get_template_directory_uri() . '/lib/jquery.fullpage.js', array(jquery), '20130115', true);
-
-    // wp_enqueue_script('fullpage-extensions-js', get_template_directory_uri() . '/lib/jquery.fullpage.extensions.min.js', array(jQuery), '20130115', true);
 
     wp_enqueue_script('jquery-unveil', get_template_directory_uri() . '/build/js/jquery.unveil.min.js', array('jquery'), '', true);
     
@@ -107,8 +104,6 @@ function caravel_web_scripts()
     
     wp_enqueue_script('carousel', get_template_directory_uri() . '/build/js/carousel.min.js', array(jquery), '20130115', true);
 
-
-    wp_enqueue_script('jquery-visible-js', get_template_directory_uri() . '/lib/jquery.visible.min.js', array(jquery), '20130115', true);
 
     wp_enqueue_script('smoothScroll', get_template_directory_uri() . '/build/js/smoothScroll.min.js', array('jquery'), '1.0.0', true);
 
