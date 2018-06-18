@@ -181,7 +181,7 @@
     }
     .dots-cta-p {
       width: auto;
-      border-bottom: 1px solid midnightblue;
+      border-bottom: 2px solid $color__navy;
       @media all and (min-width: $tablet) {
         width: 245px;
       }

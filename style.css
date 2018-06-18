@@ -901,7 +901,7 @@ object {
       margin: 5rem auto; }
     .dots-container .specialization-content .dots-cta-p {
       width: auto;
-      border-bottom: 1px solid midnightblue; }
+      border-bottom: 2px solid #171acc; }
       @media all and (min-width: 600px) {
         .dots-container .specialization-content .dots-cta-p {
           width: 245px; } }
