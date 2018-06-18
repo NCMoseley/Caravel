@@ -41,7 +41,7 @@ get_header(); ?>
 							<div class="specialization-content-wrapper">
 								<p>We specialize in custom Websites built with WordPress. They are designed to be clean, simple
 									and future proof. We have helped our clients realize their online voice and increase traffic, conversion and ranking.</p>
-								<p class="dots-cta-p">Find out how we can help you. </p>
+								<a href"#contact"><p class="dots-cta-p">Find out how we can help you. </p></a>
 							</div>
 						</div>
 					</div>
@@ -143,6 +143,7 @@ get_header(); ?>
 
 				<section class="dont-hesitate-container">
 					<h2 class="dont-hesitate">Don't Hesitate to get in touch!</h2>
+					<a name="contact"></a>
 					<p>Seriously though you know you will love working with us.</p>
 
 				</section>

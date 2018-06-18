@@ -419,15 +419,7 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
-  a:visited {
-    color: purple; }
-  a:hover, a:focus, a:active {
-    color: midnightblue; }
-  a:focus {
-    outline: thin dotted; }
-  a:hover, a:active {
-    outline: 0; }
+  cursor: pointer; }
 
 /* Menus */
 .main-navigation {
@@ -1068,7 +1060,7 @@ object {
       letter-spacing: 1px; } }
 
 .bullet-blue-line {
-  height: 3px;
+  height: 2px;
   width: 10px;
   background-color: #171acc;
   margin-right: 10px; }
@@ -1177,7 +1169,7 @@ object {
       width: 90%; } }
 
 .position {
-  color: #000;
+  color: #171acc;
   font-weight: 100; }
 
 .our-work-section {
