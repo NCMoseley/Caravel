@@ -2,6 +2,38 @@
 # Navigation
 --------------------------------------------------------------*/
 
+.nav-menu-container {
+	width: 100%;
+	ul {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		li {
+			margin: 0 1rem;
+			list-style: none;
+			a {
+				text-decoration: none;
+				color: #000;
+				&:hover {
+					color: #999;
+				}
+				&:visited {
+					color: #000;
+				}
+			}
+		}
+	}
+
+
+}
+
+
+
+
+
+
 /* Links */
 
 a {
