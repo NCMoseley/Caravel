@@ -3,6 +3,7 @@
 --------------------------------------------------------------*/
 
 html {
+	margin: 0 auto;
 	box-sizing: border-box;
 	@include font-size(1);
 }
@@ -15,7 +16,6 @@ html {
 
 body {
 	background-color: $color__background-body;
-	// background-color: lighten($color__navy, 5%);
 	max-width: $site__width;
 	margin: 0 auto;
 }
