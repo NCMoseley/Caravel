@@ -39,7 +39,7 @@ get_header(); ?>
 								<p>We specialize in custom Websites built with WordPress. They are designed to be clean, simple and future proof. We
 									have helped our clients realize their online voice and increase traffic, conversion and ranking.</p>
 								<a href="#contact">
-									<p class="dots-cta-p">Find out how we can help you. </p>
+									Find out how we can help you. 
 								</a>
 							</div>
 						</div>

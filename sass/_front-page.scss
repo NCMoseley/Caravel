@@ -174,12 +174,28 @@
     &-wrapper {
       width: 70%;
       margin: 5rem auto;
-    }
-    .dots-cta-p {
-      width: auto;
-      border-bottom: 2px solid $color__navy;
-      @media all and (min-width: $tablet) {
-        width: 245px;
+      a {
+        width: auto;
+        text-decoration: none;
+        position: relative;
+        @media all and (min-width: $tablet) {
+          width: 245px;
+        }
+      }
+      a:after {
+        position: absolute;
+        content: '';
+        height: 3px;
+        bottom: -7px;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        width: 70%;
+        background: $color__navy;
+        transition: .5s;
+      }
+      a:hover:after {
+        width: 100%;
       }
     }
   }
@@ -419,22 +435,18 @@
     text-decoration: none;
     position: relative;
     color: $color__text-light;
-    text-transform: uppercase;
   }
   a:after {
     position: absolute;
     content: '';
     height: 4px;
     bottom: -5px;
+    z-index: 999;
     margin: 0 auto;
     left: 0;
     right: 0;
     width: 70%;
     background: $color__navy;
-    -o-transition: .5s;
-    -ms-transition: .5s;
-    -moz-transition: .5s;
-    -webkit-transition: .5s;
     transition: .5s;
   }
   a:hover:after {
