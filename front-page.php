@@ -85,17 +85,14 @@ get_header(); ?>
 					<div class="laptop"><img src="<?php echo get_template_directory_uri() . '/assets/laptop.png
 					'?>" alt="Laptop"></div>
 
-					<div class="work-carousel">
-
 						<?php get_template_part('template-parts/carousel'); ?>
 
-					</div>
 				</div>
 
 					<div class="our-work-right">
-					<div class="our-work-header">
+					
 						<h2>Our Work</h2>
-					</div>
+				
 					<div class="our-work-content">
 
 						<?php get_template_part('template-parts/carousel-nav'); ?>

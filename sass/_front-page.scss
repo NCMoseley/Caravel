@@ -329,43 +329,69 @@
 .our-work-section {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  @media all and (min-width: 650px) {
+  text-align: center;
+  @media all and (min-width: 1000px) {
     flex-direction: row;
+    text-align: left;
   }
 }
 
 .work-wrapper {
-  width: 800px;
+  width: 600px;
+  height: 500px;
+  @media all and (min-width: 1000px) {
+    margin: 0 5%;
+  }
   .laptop {
     position: absolute;
-    width: 800px;
+    width: 500px;
     z-index: 2;
-    margin: 0 5%;
+    margin: 72px 0 0 49px;
   }
 }
 
 .work-carousel {
-  height: 440px;
+  width: 100%
 }
 
 .our-work-right {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 800px;
   width: 100%;
+  @media all and (min-width: 1000px) {
+    min-width: 400px;
+    height: 800px;
+  }
   background-color: #000;
-  @media all and (min-width: 650px) {
-    width: 30%;
+  padding: 3%;
+  h2 {
+    margin: 0;
+    padding: 20px;
+    font-family: $font__accent;
+    font-weight: 700;
+    font-size: 3rem;
+    color: $color__text-light;
+  }
+  h3 {
+    color: $color__text-light;
+  }
+  p {
+    color: $color__text-light;
+    width: 80%;
+    text-align: center;
+  }
+  a {
+    text-decoration: underline;
+    color: $color__text-light;
   }
 }
 
 .our-work-header {
   background-color: #000;
   font-family: $font__accent;
-  font-weight: 200;
   font-size: 2rem;
   text-align: center;
   color: $color__text-light;
@@ -373,6 +399,7 @@
   h2 {
     margin: 0;
     padding: 20px 0;
+    font-weight: 100;
   }
 }
 
