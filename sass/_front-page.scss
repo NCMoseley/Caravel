@@ -570,6 +570,7 @@
 }
 
 .dont-hesitate-container {
+  padding: 5%;
   @media all and (min-width: 600px) {
     margin-left: 10%;
   }
@@ -577,17 +578,38 @@
   color: #fff;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
   h2 {
     font-family: 'Playfair Display', serif;
-    font-weight: 100;
+    font-weight: 700;
     font-size: 60px;
-    padding: 4%;
+    padding: 4% 10%;
+    padding-right: 20%;
   }
-  p {
+  a {
+    width: 60%;
+    text-decoration: none;
+    position: relative;
     font-weight: 100;
-    padding: 4%;
+    padding: 4% 0 0 10%;
+    cursor: pointer;
+    color: $color__text-light;
+  }
+  a:after {
+    position: absolute;
+    content: '';
+    height: 3px;
+    bottom: -7px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 50%;
+    background: $color__navy;
+    transition: .5s;
+  }
+  a:hover:after {
+    width: 65%;
   }
 }
 

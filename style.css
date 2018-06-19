@@ -1354,6 +1354,7 @@ object {
   font-weight: 100; }
 
 .dont-hesitate-container {
+  padding: 5%;
   background-color: #000;
   color: #fff;
   display: -webkit-box;
@@ -1363,23 +1364,43 @@ object {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left; }
   @media all and (min-width: 600px) {
     .dont-hesitate-container {
       margin-left: 10%; } }
   .dont-hesitate-container h2 {
     font-family: 'Playfair Display', serif;
-    font-weight: 100;
+    font-weight: 700;
     font-size: 60px;
-    padding: 4%; }
-  .dont-hesitate-container p {
+    padding: 4% 10%;
+    padding-right: 20%; }
+  .dont-hesitate-container a {
+    width: 60%;
+    text-decoration: none;
+    position: relative;
     font-weight: 100;
-    padding: 4%; }
+    padding: 4% 0 0 10%;
+    cursor: pointer;
+    color: #fff; }
+  .dont-hesitate-container a:after {
+    position: absolute;
+    content: '';
+    height: 3px;
+    bottom: -7px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 50%;
+    background: #171acc;
+    -webkit-transition: .5s;
+    transition: .5s; }
+  .dont-hesitate-container a:hover:after {
+    width: 65%; }
 
 @-webkit-keyframes nav {
   from {

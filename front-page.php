@@ -142,9 +142,8 @@ get_header(); ?>
 				</div>
 
 				<section class="dont-hesitate-container">
-					<h2 class="dont-hesitate">Don't Hesitate to get in touch!</h2>
-					<a id="contact"></a>
-					<p>Seriously though you know you will love working with us.</p>
+					<h2 class="dont-hesitate">Don't hesitate to get in touch!</h2>
+					<a id="contact" hfre="">Seriously though you know you will love working with us.</a>
 
 				</section>
 		</main>
