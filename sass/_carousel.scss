@@ -8,21 +8,33 @@ $moveRight: $tileWidth * ($growFactor - 1);
 .tile {
   width: $tileWidth !important;
   cursor: pointer;
-  margin-left: 108px;
+  z-index: 999;
   margin-top: 100px;
-  z-index: 1;
+  @media all and (min-width: 800px) {
+    margin-left: 108px;
+    margin-top: 100px;
+  }
 }
 
 .valo {
-  left: -500px !important;
+  left: -376px !important;
+  @media all and (min-width: 800px) {
+    left: -500px !important;
+  }
 }
 
 .pacwest {
-  left: -994px !important;
+  left: -770px !important;
+  @media all and (min-width: 800px) {
+    left: -994px !important;
+  }
 }
 
 .nexus {
-  left: -1489px !important;
+  left: -1155px !important;
+  @media all and (min-width: 800px) {
+    left: -1489px !important;
+  }
 }
 
 .responsive {
@@ -30,11 +42,15 @@ $moveRight: $tileWidth * ($growFactor - 1);
     width: 100px;
     color: $color__text-light;
     position: absolute;
-    right: 0;
-    top: 57%;
+    right: 90px;
+    bottom: 0px;
     z-index: 5;
     height: 50px;
     background-color: #000;
+    @media all and (min-width: 800px) {
+      right: 0;
+      top: 57%;
+    }
   }
   button.slick-next:after {
     content: " -►";
@@ -43,11 +59,15 @@ $moveRight: $tileWidth * ($growFactor - 1);
     color: $color__text-light;
     position: absolute;
     width: 100px;
-    left: -2px;
-    top: 57%;
+    left: 90px;
+    bottom: 0px;
     z-index: 5;
     height: 50px;
     background-color: #000;
+    @media all and (min-width: 800px) {
+      left: -2px;
+      top: 57%;
+    }
   }
   button.slick-prev:before {
     content: "◀︎- ";

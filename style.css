@@ -1123,16 +1123,25 @@ object {
       text-align: left; } }
 
 .work-wrapper {
-  width: 600px;
-  height: 500px; }
+  height: 500px;
+  width: 400px; }
+  @media all and (min-width: 800px) {
+    .work-wrapper {
+      width: 600px; } }
   @media all and (min-width: 1000px) {
     .work-wrapper {
       margin: 0 5%; } }
+  @media all and (min-width: 1440px) {
+    .work-wrapper {
+      margin: 0 10%; } }
   .work-wrapper .laptop {
     position: absolute;
     width: 500px;
     z-index: 2;
-    margin: 72px 0 0 49px; }
+    margin: 72px 0 0 -49px; }
+    @media all and (min-width: 800px) {
+      .work-wrapper .laptop {
+        margin: 72px 0 0 49px; } }
 
 .work-carousel {
   width: 100%; }
@@ -1166,7 +1175,6 @@ object {
     color: #fff; }
   .our-work-right p {
     color: #fff;
-    width: 80%;
     text-align: center; }
   .our-work-right a {
     text-decoration: underline;
@@ -1404,28 +1412,44 @@ object {
 .tile {
   width: 388px !important;
   cursor: pointer;
-  margin-left: 108px;
-  margin-top: 100px;
-  z-index: 1; }
+  z-index: 999;
+  margin-top: 100px; }
+  @media all and (min-width: 800px) {
+    .tile {
+      margin-left: 108px;
+      margin-top: 100px; } }
 
 .valo {
-  left: -500px !important; }
+  left: -376px !important; }
+  @media all and (min-width: 800px) {
+    .valo {
+      left: -500px !important; } }
 
 .pacwest {
-  left: -994px !important; }
+  left: -770px !important; }
+  @media all and (min-width: 800px) {
+    .pacwest {
+      left: -994px !important; } }
 
 .nexus {
-  left: -1489px !important; }
+  left: -1155px !important; }
+  @media all and (min-width: 800px) {
+    .nexus {
+      left: -1489px !important; } }
 
 .responsive button.slick-next {
   width: 100px;
   color: #fff;
   position: absolute;
-  right: 0;
-  top: 57%;
+  right: 90px;
+  bottom: 0px;
   z-index: 5;
   height: 50px;
   background-color: #000; }
+  @media all and (min-width: 800px) {
+    .responsive button.slick-next {
+      right: 0;
+      top: 57%; } }
 
 .responsive button.slick-next:after {
   content: " -►"; }
@@ -1434,11 +1458,15 @@ object {
   color: #fff;
   position: absolute;
   width: 100px;
-  left: -2px;
-  top: 57%;
+  left: 90px;
+  bottom: 0px;
   z-index: 5;
   height: 50px;
   background-color: #000; }
+  @media all and (min-width: 800px) {
+    .responsive button.slick-prev {
+      left: -2px;
+      top: 57%; } }
 
 .responsive button.slick-prev:before {
   content: "◀︎- "; }

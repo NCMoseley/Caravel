@@ -339,16 +339,25 @@
 }
 
 .work-wrapper {
-  width: 600px;
   height: 500px;
+  width: 400px;
+  @media all and (min-width: 800px) {
+    width: 600px;
+  }
   @media all and (min-width: 1000px) {
     margin: 0 5%;
+  }
+  @media all and (min-width: 1440px) {
+    margin: 0 10%;
   }
   .laptop {
     position: absolute;
     width: 500px;
     z-index: 2;
-    margin: 72px 0 0 49px;
+    margin: 72px 0 0 -49px;
+    @media all and (min-width: 800px) {
+      margin: 72px 0 0 49px;
+    }
   }
 }
 
@@ -379,8 +388,7 @@
     color: $color__text-light;
   }
   p {
-    color: $color__text-light;
-    width: 80%;
+    color: $color__text-light; // width: 80%;
     text-align: center;
   }
   a {
