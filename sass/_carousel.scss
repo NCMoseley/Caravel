@@ -43,12 +43,16 @@ $moveRight: $tileWidth * ($growFactor - 1);
     color: $color__text-light;
     position: absolute;
     right: 90px;
-    bottom: 0px;
+    bottom: -130px;
     z-index: 5;
     height: 50px;
     background-color: #000;
     @media all and (min-width: 800px) {
       right: 0;
+      top: 57%;
+    }
+    @media all and (min-width: 1440px) {
+      right: -183px;
       top: 57%;
     }
   }
@@ -60,12 +64,16 @@ $moveRight: $tileWidth * ($growFactor - 1);
     position: absolute;
     width: 100px;
     left: 90px;
-    bottom: 0px;
+    bottom: -130px;
     z-index: 5;
     height: 50px;
     background-color: #000;
     @media all and (min-width: 800px) {
       left: -2px;
+      top: 57%;
+    }
+    @media all and (min-width: 1440px) {
+      left: -155px;
       top: 57%;
     }
   }

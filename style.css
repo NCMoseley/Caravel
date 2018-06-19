@@ -1120,7 +1120,10 @@ object {
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
               flex-direction: row;
-      text-align: left; } }
+      text-align: left;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; } }
 
 .work-wrapper {
   height: 500px;
@@ -1129,6 +1132,9 @@ object {
     .work-wrapper {
       width: 600px; } }
   @media all and (min-width: 1000px) {
+    .work-wrapper {
+      margin: 0 3%; } }
+  @media all and (min-width: 1100px) {
     .work-wrapper {
       margin: 0 5%; } }
   @media all and (min-width: 1440px) {
@@ -1162,23 +1168,41 @@ object {
   padding: 3%; }
   @media all and (min-width: 1000px) {
     .our-work-right {
+      height: 800px;
       min-width: 400px;
-      height: 800px; } }
+      max-width: 35%; } }
   .our-work-right h2 {
     margin: 0;
     padding: 20px;
     font-family: "Playfair Display", Times, serif;
-    font-weight: 700;
+    font-weight: 100;
     font-size: 3rem;
     color: #fff; }
+    @media all and (min-width: 1000px) {
+      .our-work-right h2 {
+        text-align: left;
+        padding-left: 0; } }
   .our-work-right h3 {
     color: #fff; }
   .our-work-right p {
     color: #fff;
-    text-align: center; }
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px; }
+    @media all and (min-width: 1000px) {
+      .our-work-right p {
+        text-align: left;
+        padding-right: 55px;
+        margin: 0;
+        margin-bottom: 20px; } }
+    @media all and (min-width: 1440px) {
+      .our-work-right p {
+        padding-right: 0px;
+        width: 100%; } }
   .our-work-right a {
-    text-decoration: underline;
-    color: #fff; }
+    text-decoration: underline !important;
+    color: #171acc; }
 
 .our-work-header {
   background-color: #000;
@@ -1442,13 +1466,17 @@ object {
   color: #fff;
   position: absolute;
   right: 90px;
-  bottom: 0px;
+  bottom: -130px;
   z-index: 5;
   height: 50px;
   background-color: #000; }
   @media all and (min-width: 800px) {
     .responsive button.slick-next {
       right: 0;
+      top: 57%; } }
+  @media all and (min-width: 1440px) {
+    .responsive button.slick-next {
+      right: -183px;
       top: 57%; } }
 
 .responsive button.slick-next:after {
@@ -1459,13 +1487,17 @@ object {
   position: absolute;
   width: 100px;
   left: 90px;
-  bottom: 0px;
+  bottom: -130px;
   z-index: 5;
   height: 50px;
   background-color: #000; }
   @media all and (min-width: 800px) {
     .responsive button.slick-prev {
       left: -2px;
+      top: 57%; } }
+  @media all and (min-width: 1440px) {
+    .responsive button.slick-prev {
+      left: -155px;
       top: 57%; } }
 
 .responsive button.slick-prev:before {
