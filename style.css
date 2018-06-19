@@ -534,7 +534,7 @@ a {
   width: 1px;
   overflow: hidden; }
   .screen-reader-text:focus {
-    background-color: #e2e2e2;
+    background-color: #e7e7e7;
     border-radius: 3px;
     -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
             box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
@@ -755,7 +755,7 @@ object {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #e2e2e2;
+  background-color: #e7e7e7;
   color: #404040;
   position: relative;
   z-index: 2; }
@@ -875,7 +875,7 @@ object {
     letter-spacing: 3px; }
 
 .second-container {
-  background-color: #e2e2e2;
+  background-color: #e7e7e7;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -916,7 +916,7 @@ object {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background-color: #e2e2e2; }
+    background-color: #e7e7e7; }
   .dots-container .specialization-content {
     background-color: #fff; }
     .dots-container .specialization-content-wrapper {
@@ -1254,7 +1254,7 @@ object {
 
 .team-wrapper {
   padding: 5% 1%;
-  background-color: #e2e2e2; }
+  background-color: #e7e7e7; }
   @media all and (min-width: 600px) {
     .team-wrapper {
       margin-right: 5%;
