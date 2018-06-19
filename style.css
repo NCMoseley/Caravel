@@ -1183,7 +1183,9 @@ object {
         text-align: left;
         padding-left: 0; } }
   .our-work-right h3 {
-    color: #fff; }
+    color: #fff;
+    font-weight: 100;
+    text-transform: uppercase; }
   .our-work-right p {
     color: #fff;
     text-align: center;
@@ -1201,8 +1203,24 @@ object {
         padding-right: 0px;
         width: 100%; } }
   .our-work-right a {
-    text-decoration: underline !important;
-    color: #171acc; }
+    text-decoration: none;
+    position: relative;
+    color: #fff;
+    text-transform: uppercase; }
+  .our-work-right a:after {
+    position: absolute;
+    content: '';
+    height: 4px;
+    bottom: -5px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 70%;
+    background: #171acc;
+    -webkit-transition: .5s;
+    transition: .5s; }
+  .our-work-right a:hover:after {
+    width: 100%; }
 
 .our-work-header {
   background-color: #000;
