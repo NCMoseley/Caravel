@@ -17,7 +17,7 @@
   align-items: center;
   opacity: 0;
   background-color: $color__background-body; // box-shadow: 0 1px 6px rgba(0, 0, 0, .16), 0 1px 6px rgba(0, 0, 0, .23);
-  animation: nav .5s;
+  animation: nav 0.5s;
   animation-fill-mode: forwards;
   animation-delay: 3.25s;
 }
@@ -54,7 +54,7 @@
     font-weight: 700;
     font-family: $font__accent;
     text-align: center;
-    animation: fadeIn .5s;
+    animation: fadeIn 0.5s;
     animation-delay: 2s;
     animation-fill-mode: forwards;
     position: relative;
@@ -68,7 +68,7 @@
       left: 0;
       background-color: #000;
       animation-name: h1pseudo;
-      animation-duration: .7s;
+      animation-duration: 0.7s;
       animation-timing-function: ease-in-out;
       animation-fill-mode: forwards;
       animation-delay: 2.5s;
@@ -84,17 +84,17 @@
       font-weight: 100;
     }
     span:nth-of-type(1) {
-      animation: fadeIn .5s;
+      animation: fadeIn 0.5s;
       animation-delay: 1s;
       animation-fill-mode: forwards;
     }
     span:nth-of-type(2) {
-      animation: fadeIn .5s;
+      animation: fadeIn 0.5s;
       animation-delay: 1.3s;
       animation-fill-mode: forwards;
     }
     span:nth-of-type(3) {
-      animation: fadeIn .5s;
+      animation: fadeIn 0.5s;
       animation-delay: 1.6s;
       animation-fill-mode: forwards;
     }
@@ -121,7 +121,7 @@
     font-size: 1.5rem;
     text-align: justify;
     letter-spacing: 3px;
-    animation: fadeIn .7s;
+    animation: fadeIn 0.7s;
     animation-delay: 3s;
     animation-fill-mode: forwards;
   }
@@ -192,7 +192,7 @@
         right: 0;
         width: 70%;
         background: $color__navy;
-        transition: .5s;
+        transition: 0.5s;
       }
       a:hover:after {
         width: 100%;
@@ -382,7 +382,7 @@
 }
 
 .work-carousel {
-  width: 100%
+  width: 100%;
 }
 
 .our-work-right {
@@ -447,7 +447,7 @@
     right: 0;
     width: 70%;
     background: $color__navy;
-    transition: .5s;
+    transition: 0.5s;
   }
   a:hover:after {
     width: 100%;
@@ -588,29 +588,29 @@
     padding-right: 20%;
   }
   a {
-    width: 60%;
     text-decoration: none;
     position: relative;
     font-weight: 100;
-    padding: 4% 0 0 10%;
+    padding: 4% 10% 0 10%;
     cursor: pointer;
     color: $color__text-light;
+    border-bottom: 2px solid $color__navy;
   }
-  a:after {
-    position: absolute;
-    content: '';
-    height: 3px;
-    bottom: -7px;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    width: 50%;
-    background: $color__navy;
-    transition: .5s;
-  }
-  a:hover:after {
-    width: 65%;
-  }
+  // a:after {
+  //   position: absolute;
+  //   content: '';
+  //   height: 3px;
+  //   bottom: -7px;
+  //   margin: 0 auto;
+  //   left: 0;
+  //   right: 0;
+  //   width: 50%;
+  //   background: $color__navy;
+  //   transition: 0.5s;
+  // }
+  // a:hover:after {
+  //   width: 65%;
+  // }
 }
 
 @keyframes nav {
@@ -629,7 +629,7 @@
   }
   to {
     margin-bottom: 300px;
-    opacity: 0
+    opacity: 0;
   }
 }
 
@@ -638,7 +638,7 @@
     opacity: 1;
   }
   to {
-    opacity: 0
+    opacity: 0;
   }
 }
 
@@ -658,7 +658,6 @@
     opacity: 0;
     bottom: 0;
   }
-  ;
   to {
     opacity: 1;
     bottom: 15px;
@@ -667,13 +666,11 @@
 
 @keyframes arrow {
   from {
-    transform: translateX(0)
+    transform: translateX(0);
   }
-  ;
   to {
-    transform: translateX(-20px)
+    transform: translateX(-20px);
   }
-  ;
 } // @keyframes navSlide {
 //   from {
 //     transform: translateY(-100px);

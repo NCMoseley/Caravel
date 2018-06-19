@@ -714,8 +714,8 @@ object {
           align-items: center;
   opacity: 0;
   background-color: #fff;
-  -webkit-animation: nav .5s;
-          animation: nav .5s;
+  -webkit-animation: nav 0.5s;
+          animation: nav 0.5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-delay: 3.25s;
@@ -770,8 +770,8 @@ object {
     font-weight: 700;
     font-family: "Playfair Display", Times, serif;
     text-align: center;
-    -webkit-animation: fadeIn .5s;
-            animation: fadeIn .5s;
+    -webkit-animation: fadeIn 0.5s;
+            animation: fadeIn 0.5s;
     -webkit-animation-delay: 2s;
             animation-delay: 2s;
     -webkit-animation-fill-mode: forwards;
@@ -788,8 +788,8 @@ object {
       background-color: #000;
       -webkit-animation-name: h1pseudo;
               animation-name: h1pseudo;
-      -webkit-animation-duration: .7s;
-              animation-duration: .7s;
+      -webkit-animation-duration: 0.7s;
+              animation-duration: 0.7s;
       -webkit-animation-timing-function: ease-in-out;
               animation-timing-function: ease-in-out;
       -webkit-animation-fill-mode: forwards;
@@ -804,22 +804,22 @@ object {
     text-transform: uppercase;
     font-weight: 100; }
   .panel1 h3 span:nth-of-type(1) {
-    -webkit-animation: fadeIn .5s;
-            animation: fadeIn .5s;
+    -webkit-animation: fadeIn 0.5s;
+            animation: fadeIn 0.5s;
     -webkit-animation-delay: 1s;
             animation-delay: 1s;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards; }
   .panel1 h3 span:nth-of-type(2) {
-    -webkit-animation: fadeIn .5s;
-            animation: fadeIn .5s;
+    -webkit-animation: fadeIn 0.5s;
+            animation: fadeIn 0.5s;
     -webkit-animation-delay: 1.3s;
             animation-delay: 1.3s;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards; }
   .panel1 h3 span:nth-of-type(3) {
-    -webkit-animation: fadeIn .5s;
-            animation: fadeIn .5s;
+    -webkit-animation: fadeIn 0.5s;
+            animation: fadeIn 0.5s;
     -webkit-animation-delay: 1.6s;
             animation-delay: 1.6s;
     -webkit-animation-fill-mode: forwards;
@@ -851,8 +851,8 @@ object {
     font-size: 1.5rem;
     text-align: justify;
     letter-spacing: 3px;
-    -webkit-animation: fadeIn .7s;
-            animation: fadeIn .7s;
+    -webkit-animation: fadeIn 0.7s;
+            animation: fadeIn 0.7s;
     -webkit-animation-delay: 3s;
             animation-delay: 3s;
     -webkit-animation-fill-mode: forwards;
@@ -939,8 +939,8 @@ object {
         right: 0;
         width: 70%;
         background: #171acc;
-        -webkit-transition: .5s;
-        transition: .5s; }
+        -webkit-transition: 0.5s;
+        transition: 0.5s; }
       .dots-container .specialization-content-wrapper a:hover:after {
         width: 100%; }
 
@@ -1232,8 +1232,8 @@ object {
     right: 0;
     width: 70%;
     background: #171acc;
-    -webkit-transition: .5s;
-    transition: .5s; }
+    -webkit-transition: 0.5s;
+    transition: 0.5s; }
   .our-work-right a:hover:after {
     width: 100%; }
 
@@ -1380,27 +1380,13 @@ object {
     padding: 4% 10%;
     padding-right: 20%; }
   .dont-hesitate-container a {
-    width: 60%;
     text-decoration: none;
     position: relative;
     font-weight: 100;
-    padding: 4% 0 0 10%;
+    padding: 4% 10% 0 10%;
     cursor: pointer;
-    color: #fff; }
-  .dont-hesitate-container a:after {
-    position: absolute;
-    content: '';
-    height: 3px;
-    bottom: -7px;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    width: 50%;
-    background: #171acc;
-    -webkit-transition: .5s;
-    transition: .5s; }
-  .dont-hesitate-container a:hover:after {
-    width: 65%; }
+    color: #fff;
+    border-bottom: 2px solid #171acc; }
 
 @-webkit-keyframes nav {
   from {
