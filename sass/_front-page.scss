@@ -570,6 +570,9 @@
 }
 
 .dont-hesitate-container {
+  @media all and (min-width: 600px) {
+    margin-left: 10%;
+  }
   background-color: #000;
   color: #fff;
   display: flex;

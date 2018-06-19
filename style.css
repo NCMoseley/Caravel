@@ -1369,6 +1369,9 @@ object {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  @media all and (min-width: 600px) {
+    .dont-hesitate-container {
+      margin-left: 10%; } }
   .dont-hesitate-container h2 {
     font-family: 'Playfair Display', serif;
     font-weight: 100;
