@@ -1067,7 +1067,7 @@ object {
     margin: 0;
     padding: 20px;
     font-family: "Playfair Display", Times, serif;
-    font-weight: 700;
+    font-weight: 100;
     font-size: 3rem; }
   .title-paragraph-container p {
     -ms-flex-item-align: center;
