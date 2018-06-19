@@ -38,6 +38,9 @@ $moveRight: $tileWidth * ($growFactor - 1);
 }
 
 .responsive {
+  button {
+    cursor: pointer;
+  }
   button.slick-next {
     width: 100px;
     color: $color__text-light;

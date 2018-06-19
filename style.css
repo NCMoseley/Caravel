@@ -1494,6 +1494,9 @@ object {
     .nexus {
       left: -1489px !important; } }
 
+.responsive button {
+  cursor: pointer; }
+
 .responsive button.slick-next {
   width: 100px;
   color: #fff;
