@@ -712,6 +712,8 @@ object {
       -ms-flex-align: center;
           align-items: center;
   opacity: 0;
+  -webkit-box-shadow: 1px 1px 1px black;
+          box-shadow: 1px 1px 1px black;
   background-color: #fff;
   -webkit-animation: nav .5s;
           animation: nav .5s;
