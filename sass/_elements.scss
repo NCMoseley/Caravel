@@ -8,6 +8,10 @@ html {
 	@include font-size(1);
 }
 
+*:focus {
+	outline: none !important;
+}
+
 *,
 *:before,
 *:after {

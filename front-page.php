@@ -103,9 +103,11 @@
 						</div>
 						<div class="specialization-content">
 							<div class="specialization-content-wrapper">
-								<p>We specialize in custom Websites built with WordPress. They are designed to be clean, simple
-									and future proof. We have helped our clients realize their online voice and increase traffic, conversion and ranking.</p>
-								<a href="#contact"><p class="dots-cta-p">Find out how we can help you. </p></a>
+								<p>We specialize in custom Websites built with WordPress. They are designed to be clean, simple and future proof. We
+									have helped our clients realize their online voice and increase traffic, conversion and ranking.</p>
+								<a href="#contact">
+									Find out how we can help you. 
+								</a>
 							</div>
 						</div>
 					</div>
@@ -145,25 +147,24 @@
 
 
 				<section class="our-work-section">
-					<div class="our-work-header">
+				<div class="work-wrapper">
+
+					<div class="laptop"><img src="<?php echo get_template_directory_uri() . '/assets/laptop.png
+					'?>" alt="Laptop"></div>
+
+						<?php get_template_part('template-parts/carousel'); ?>
+
+				</div>
+
+					<div class="our-work-right">
+					
 						<h2>Our Work</h2>
+				
+					<div class="our-work-content">
+
+						<?php get_template_part('template-parts/carousel-nav'); ?>
+						
 					</div>
-					<!-- <div class="our-work-content">
-						<p>We are a boutique agency that specializes in custom Websites built with WordPress. They are designed to be clean, simple
-							and future proof. We have helped our clients realize their online voice and increased traffic, conversion and ranking.
-							Find out how we can help you. You can view some of our recent projects below.
-						</p>
-					</div> -->
-				</section>
-
-				<section class="work-wrapper">
-					<div class="work-carousel">
-
-
-
-
-						<!-- <?php get_template_part('template-parts/carousel'); ?> -->
-
 					</div>
 				</section>
 
@@ -171,6 +172,8 @@
 					<section class="team-wrapper">
 						<h2>The Team</h2>
 						<p>Don't be fooled by the smiles, these Navy Seals of code are not guys you would want to get stuck with in a dark alley.</p>
+						<p>We are a boutique agency that specializes in custom Websites built with WordPress. They are designed to be clean, simple and future proof. We have helped our clients realize their online voice and increased traffic, conversion and ranking. Find out how we can help you. 
+						</p>
 						<div class="team-container">
 							<div class="team-top-row">
 								<div class="team-single">
@@ -206,9 +209,8 @@
 				</div>
 
 				<section class="dont-hesitate-container">
-					<h2 class="dont-hesitate">Don't Hesitate to get in touch!</h2>
-					<a id="contact"></a>
-					<p>Seriously though you know you will love working with us.</p>
+					<h2 class="dont-hesitate">Don't hesitate to get in touch!</h2>
+					<a id="contact" hfre="">Seriously though you know you will love working with us.</a>
 
 				</section>
 
