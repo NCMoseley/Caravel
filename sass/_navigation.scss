@@ -2,11 +2,25 @@
 # Navigation
 --------------------------------------------------------------*/
 
+.site-header {
+	display: flex !important;
+	align-items: center;
+}
 
 .main-navigation {
 	width: 100%;
-	display: flex;
-	align-items: center;
+  height: $navigtion__height;
+  max-width: $site__width;
+  position: fixed;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  opacity: 0.9;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  background-color: $color__background-body; // box-shadow: 0 1px 6px rgba(0, 0, 0, .16), 0 1px 6px rgba(0, 0, 0, .23);
+  animation: nav 0.5s;
+  animation-fill-mode: forwards;
+  animation-delay: 3.25s;
 }
 
 .nav-menu-container {
@@ -34,6 +48,26 @@
 		}
 	}
 }
+
+#toggle {
+	display: none;
+}
+.toggle-container {
+	order:
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Links */
 

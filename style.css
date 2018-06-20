@@ -422,12 +422,26 @@ textarea {
 --------------------------------------------------------------*/
 .main-navigation {
   width: 100%;
+  height: 75px;
+  max-width: 1440px;
+  position: fixed;
+  z-index: 10;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  opacity: 0.9;
+  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  -webkit-animation: nav 0.5s;
+          animation: nav 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 3.25s;
+          animation-delay: 3.25s; }
 
 .nav-menu-container {
   width: 100%; }
@@ -454,6 +468,9 @@ textarea {
           color: #999; }
         .nav-menu-container ul li a:visited {
           color: #000; }
+
+#toggle {
+  display: none; }
 
 /* Links */
 a {
@@ -645,28 +662,6 @@ object {
   background-size: contain;
   background-repeat: no-repeat;
   color: #404040; }
-
-.main-navigation {
-  height: 75px;
-  max-width: 1440px;
-  position: fixed;
-  z-index: 10;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  opacity: 0;
-  -webkit-box-shadow: 1px 1px 1px black;
-          box-shadow: 1px 1px 1px black;
-  background-color: #fff;
-  -webkit-animation: nav 0.5s;
-          animation: nav 0.5s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-delay: 3.25s;
-          animation-delay: 3.25s; }
 
 .header-wrapper {
   width: 80%;
@@ -1334,18 +1329,6 @@ object {
     cursor: pointer;
     color: #fff;
     border-bottom: 2px solid #171acc; }
-
-@-webkit-keyframes nav {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 0.9; } }
-
-@keyframes nav {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 0.9; } }
 
 @-webkit-keyframes slideup {
   from {

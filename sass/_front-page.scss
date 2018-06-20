@@ -8,21 +8,6 @@
   color: $color__text-main;
 }
 
-.main-navigation {
-  height: $navigtion__height;
-  max-width: $site__width;
-  position: fixed;
-  z-index: 10;
-  display: flex;
-  align-items: center;
-  opacity: 0;
-  box-shadow: 1px 1px 1px black;
-  background-color: $color__background-body; // box-shadow: 0 1px 6px rgba(0, 0, 0, .16), 0 1px 6px rgba(0, 0, 0, .23);
-  animation: nav 0.5s;
-  animation-fill-mode: forwards;
-  animation-delay: 3.25s;
-}
-
 .header-wrapper {
   @media all and (max-width: 650px) {
     width: 100%;
@@ -614,14 +599,14 @@
   // }
 }
 
-@keyframes nav {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 0.9;
-  }
-}
+// @keyframes nav {
+//   from {
+//     opacity: 0;
+//   }
+//   to {
+//     opacity: 0.9;
+//   }
+// }
 
 @keyframes slideup {
   from {

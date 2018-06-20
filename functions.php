@@ -88,6 +88,7 @@ add_filter('stylesheet_uri', 'caravel_web_minified_css', 10, 2);
 function caravel_web_scripts()
 {
     wp_enqueue_style('red-starter-style', get_stylesheet_uri());
+    wp_enqueue_style('hamburger-menu', get_template_directory_uri() . '/lib/hamburgers.min.css');
     wp_enqueue_style('font-awesome', 'https://use.fontawesome.com/releases/v5.0.13/css/all.css');
     wp_enqueue_style('mainfont', "https://fonts.googleapis.com/css?family=Work+Sans:300,400|Playfair+Display:100,200,300,400,500,700");
 

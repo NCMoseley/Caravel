@@ -6,11 +6,8 @@ jQuery(document).ready(function ($) {
 
 
   $('.responsive').slick({
-
     fade: true,
     asNavFor: '.slider-nav',
-    // prevArrow: '<i class="fas fa-arrow-left"></i>',
-    // nextArrow: '<i class="fas fa-arrow-right"></i>'
   });
   $('.slider-nav').slick({
     slidesToShow: 1,
