@@ -1,3 +1,7 @@
+@import "../lib/scss/fontawesome.scss";
+@import "../lib/scss/fa-solid.scss";
+
+
 $duration: 450ms;
 $tileWidth: 388px;
 $tileHeight: ($tileWidth / (16/9));
@@ -60,7 +64,10 @@ $moveRight: $tileWidth * ($growFactor - 1);
     }
   }
   button.slick-next:after {
-    content: " -►";
+    margin-left: 10px;
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f061";
   }
   button.slick-prev {
     color: $color__text-light;
@@ -81,7 +88,10 @@ $moveRight: $tileWidth * ($growFactor - 1);
     }
   }
   button.slick-prev:before {
-    content: "◀︎- ";
+    margin-right: 10px;
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f060";
   }
 }
 
