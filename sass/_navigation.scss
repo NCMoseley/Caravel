@@ -3,7 +3,8 @@
 --------------------------------------------------------------*/
 
 .site-header {
-	display: flex !important;
+	margin-top: 32px;
+	display: flex;
 	align-items: center;
 }
 
@@ -13,49 +14,104 @@
   max-width: $site__width;
   position: fixed;
   z-index: 10;
-  display: flex;
+	display: flex;
+	justify-content: space-between;
   align-items: center;
   opacity: 0.9;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
   background-color: $color__background-body; // box-shadow: 0 1px 6px rgba(0, 0, 0, .16), 0 1px 6px rgba(0, 0, 0, .23);
   animation: nav 0.5s;
   animation-fill-mode: forwards;
-  animation-delay: 3.25s;
+	animation-delay: 3.25s;
+	@media all and (min-width: 620px) {
+		justify-content: center;
+	}
 }
 
 .nav-menu-container {
-	width: 100%;
-	ul {
+	display: none;
+	@media all and (min-width: 620px) {
+		display: block;
 		width: 100%;
-		margin: 0;
-		padding: 0;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		li {
-			margin: 0 1rem;
-			list-style: none;
-			a {
-				text-decoration: none;
-				color: #000;
-				&:hover {
-					color: #999;
-				}
-				&:visited {
+		ul {
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			li {
+				margin: 0 1rem;
+				list-style: none;
+				a {
+					text-decoration: none;
 					color: #000;
+					&:hover {
+						color: #999;
+					}
+					&:visited {
+						color: #000;
+					}
 				}
 			}
 		}
 	}
 }
 
-#toggle {
-	display: none;
-}
+
+// NAV TOGGLED STYLES
+
 .toggle-container {
-	order:
+	padding-right: 20px;
+	display: flex;
+	align-items: center;
+	@media all and (min-width: 620px) {
+		display: none;
+	}
+	.hamburger--slider {
+		background: #fff;
+		box-shadow: none;
+		text-shadow: none;
+		border: none;
+		cursor: pointer;
+	}
 }
 
+
+#toggle {
+	display: none;
+}	
+
+.mobile-nav {
+	position: absolute;
+	z-index: 10;
+	top: 75px;
+	right: 0;	
+	display: block;
+	background-color: white;
+	ul{
+		padding: 100px;
+	}
+	li {
+		margin: 1rem 0;
+		list-style: none;
+	}
+}
+
+
+// #toggle:checked {
+// 	.nav-menu-container {
+// 		display: block !important;
+// 		position: absolute;
+// 		top: 10px;
+// 		ul {
+// 			background-color: red;
+// 		}
+// 	}	
+
+
+
+// }
 
 
 

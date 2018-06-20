@@ -420,6 +420,15 @@ textarea {
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
+.site-header {
+  margin-top: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
 .main-navigation {
   width: 100%;
   height: 75px;
@@ -429,6 +438,9 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -442,35 +454,76 @@ textarea {
           animation-fill-mode: forwards;
   -webkit-animation-delay: 3.25s;
           animation-delay: 3.25s; }
+  @media all and (min-width: 620px) {
+    .main-navigation {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
 
 .nav-menu-container {
-  width: 100%; }
-  .nav-menu-container ul {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    .nav-menu-container ul li {
-      margin: 0 1rem;
-      list-style: none; }
-      .nav-menu-container ul li a {
-        text-decoration: none;
-        color: #000; }
-        .nav-menu-container ul li a:hover {
-          color: #999; }
-        .nav-menu-container ul li a:visited {
-          color: #000; }
+  display: none; }
+  @media all and (min-width: 620px) {
+    .nav-menu-container {
+      display: block;
+      width: 100%; }
+      .nav-menu-container ul {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .nav-menu-container ul li {
+          margin: 0 1rem;
+          list-style: none; }
+          .nav-menu-container ul li a {
+            text-decoration: none;
+            color: #000; }
+            .nav-menu-container ul li a:hover {
+              color: #999; }
+            .nav-menu-container ul li a:visited {
+              color: #000; } }
+
+.toggle-container {
+  padding-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  @media all and (min-width: 620px) {
+    .toggle-container {
+      display: none; } }
+  .toggle-container .hamburger--slider {
+    background: #fff;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    text-shadow: none;
+    border: none;
+    cursor: pointer; }
 
 #toggle {
   display: none; }
+
+.mobile-nav {
+  position: absolute;
+  z-index: 10;
+  top: 75px;
+  right: 0;
+  display: block;
+  background-color: white; }
+  .mobile-nav ul {
+    padding: 100px; }
+  .mobile-nav li {
+    margin: 1rem 0;
+    list-style: none; }
 
 /* Links */
 a {
