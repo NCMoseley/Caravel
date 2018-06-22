@@ -1349,7 +1349,7 @@ object {
   font-weight: 100; }
 
 .dont-hesitate-container {
-  padding: 5%;
+  padding: 10%;
   background-color: #000;
   color: #fff;
   display: -webkit-box;
@@ -1372,16 +1372,10 @@ object {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
     font-size: 60px;
-    padding: 4% 10%;
+    padding: 4% 0;
     padding-right: 20%; }
   .dont-hesitate-container a {
-    text-decoration: none;
-    position: relative;
-    font-weight: 100;
-    padding: 4% 10% 0 10%;
-    cursor: pointer;
-    color: #fff;
-    border-bottom: 2px solid #171acc; }
+    text-decoration: none; }
 
 @-webkit-keyframes slideup {
   from {

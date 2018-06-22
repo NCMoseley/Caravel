@@ -556,9 +556,9 @@
 }
 
 .dont-hesitate-container {
-  padding: 5%;
+  padding: 10%;
   @media all and (min-width: 600px) {
-    margin-left: 10%;
+    margin-left: 5%;
   }
   background-color: #000;
   color: #fff;
@@ -570,43 +570,17 @@
     font-family: 'Playfair Display', serif;
     font-weight: 700;
     font-size: 60px;
-    padding: 4% 10%;
+    padding: 4% 0;
     padding-right: 20%;
   }
   a {
-    text-decoration: none;
-    position: relative;
-    font-weight: 100;
-    padding: 4% 10% 0 10%;
-    cursor: pointer;
-    color: $color__text-light;
-    border-bottom: 2px solid $color__navy;
+    text-decoration: none; // position: relative;
+    // font-weight: 100;
+    // padding: 4% 10% 0 10%;
+    // cursor: pointer;
+    // color: $color__text-light;
   }
-  // a:after {
-  //   position: absolute;
-  //   content: '';
-  //   height: 3px;
-  //   bottom: -7px;
-  //   margin: 0 auto;
-  //   left: 0;
-  //   right: 0;
-  //   width: 50%;
-  //   background: $color__navy;
-  //   transition: 0.5s;
-  // }
-  // a:hover:after {
-  //   width: 65%;
-  // }
 }
-
-// @keyframes nav {
-//   from {
-//     opacity: 0;
-//   }
-//   to {
-//     opacity: 0.9;
-//   }
-// }
 
 @keyframes slideup {
   from {
@@ -657,19 +631,4 @@
   to {
     transform: translateX(-20px);
   }
-} // @keyframes navSlide {
-//   from {
-//     transform: translateY(-100px);
-//     opacity: 0
-//   }
-//   ;
-//   to {
-//     transform: translateY(0);
-//     opacity: 0.9;
-//   }
-//   ;
-// }
-// .navSlide {
-//   animation: navSlide .5s;
-//   animation-fill-mode: forwards;
-// }
+}

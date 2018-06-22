@@ -101,6 +101,9 @@ function caravel_web_scripts()
 
     wp_enqueue_script('red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true);
 
+    wp_enqueue_script('modernizr', get_template_directory_uri() . '/lib/modernizr.custom.js', array(jquery), ' ', true);
+
+    wp_enqueue_script('nlform', get_template_directory_uri() . '/js/nlform.js', array(), '', true);
 
     wp_enqueue_script('jquery-unveil', get_template_directory_uri() . '/build/js/jquery.unveil.min.js', array('jquery'), '', true);
     

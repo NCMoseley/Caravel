@@ -6,82 +6,13 @@
  */
 ?>
 
-
-<?php
- 
-  //response generation function
-  $response = "";
- 
-  //function to generate response
-  function my_contact_form_generate_response($type, $message){
- 
-    global $response;
- 
-    if($type == "success") $response = "<div class='success'>{$message}</div>";
-    else $response = "<div class='error'>{$message}</div>";
- 
-	}
-	
-
-
-	$not_human       = "Human verification incorrect.";
-	$missing_content = "Please supply all information.";
-	$email_invalid   = "Email Address Invalid.";
-	$message_unsent  = "Message was not sent. Try Again.";
-	$message_sent    = "Thanks! Your message has been sent.";
-	 
-	//user posted variables
-	$name = $_POST['message_name'];
-	$email = $_POST['message_email'];
-	$message = $_POST['message_text'];
-	$human = $_POST['message_human'];
-	 
-	//php mailer variables
-	$to = "ilya.meerov@gmail.com";
-	$subject = "Someone sent a message from caravel";
-	$headers = 'From: '. $email . "\r\n" .
-		'Reply-To: ' . $email . "\r\n";
-
-
-		if(!$human == 0){
-			if($human != 2) my_contact_form_generate_response("error", $not_human); //not human!
-			else {
-					if(!filter_var($email, FILTER_VALIDATE_EMAIL))
-						my_contact_form_generate_response("error", $email_invalid);
-					else //email is valid
-					{
-						if(empty($name) || empty($message)){
-							my_contact_form_generate_response("error", $missing_content);
-						}
-						else //ready to go!
-						{
-							$sent = wp_mail($to, $subject, strip_tags($message), $headers);
-							if($sent) my_contact_form_generate_response("success", $message_sent); //message sent!
-							else my_contact_form_generate_response("error", $message_unsent); //message wasn't sent
-						}
-					}
-
-			}
-		}
-		else if ($_POST['submitted']) my_contact_form_generate_response("error", $missing_content);
-
-
-
-
-?>
-
-
-
-<?php get_header(); ?>
+	<?php get_header(); ?>
 
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-			<!-- FULLPAGE BEGINS HERE  -->
 
-
-			<!-- <div class="<?php echo wp_is_mobile() ? 'mobilepage' : 'fullpage'; ?>" id="<?php echo wp_is_mobile() ? 'mobilepage' : 'fullpage'; ?>"> -->
 			<div class="fullpage" id="fullpage">
 
 				<section class="hero-container">
@@ -106,7 +37,7 @@
 								<p>We specialize in custom Websites built with WordPress. They are designed to be clean, simple and future proof. We
 									have helped our clients realize their online voice and increase traffic, conversion and ranking.</p>
 								<a href="#contact">
-									Find out how we can help you. 
+									Find out how we can help you.
 								</a>
 							</div>
 						</div>
@@ -147,24 +78,26 @@
 
 
 				<section class="our-work-section">
-				<div class="work-wrapper">
+					<div class="work-wrapper">
 
-					<div class="laptop"><img src="<?php echo get_template_directory_uri() . '/assets/laptop.png
-					'?>" alt="Laptop"></div>
+						<div class="laptop">
+							<img src="<?php echo get_template_directory_uri() . '/assets/laptop.png
+					'?>" alt="Laptop">
+						</div>
 
 						<?php get_template_part('template-parts/carousel'); ?>
 
-				</div>
+					</div>
 
 					<div class="our-work-right">
-					
-						<h2>Our Work</h2>
-				
-					<div class="our-work-content">
 
-						<?php get_template_part('template-parts/carousel-nav'); ?>
-						
-					</div>
+						<h2>Our Work</h2>
+
+						<div class="our-work-content">
+
+							<?php get_template_part('template-parts/carousel-nav'); ?>
+
+						</div>
 					</div>
 				</section>
 
@@ -172,7 +105,9 @@
 					<section class="team-wrapper">
 						<h2>The Team</h2>
 						<p>Don't be fooled by the smiles, these Navy Seals of code are not guys you would want to get stuck with in a dark alley.</p>
-						<p>We are a boutique agency that specializes in custom Websites built with WordPress. They are designed to be clean, simple and future proof. We have helped our clients realize their online voice and increased traffic, conversion and ranking. Find out how we can help you. 
+						<p>We are a boutique agency that specializes in custom Websites built with WordPress. They are designed to be clean, simple
+							and future proof. We have helped our clients realize their online voice and increased traffic, conversion and ranking.
+							Find out how we can help you.
 						</p>
 						<div class="team-container">
 							<div class="team-top-row">
@@ -210,55 +145,13 @@
 
 				<section class="dont-hesitate-container">
 					<h2 class="dont-hesitate">Don't hesitate to get in touch!</h2>
+
+					<?php echo do_shortcode("[sitepoint_contact_form]"); ?>
+
 					<a id="contact" hfre="">Seriously though you know you will love working with us.</a>
 
 				</section>
-
-
-
-
-
-
-
-			<!-- FORM SHIT GOES HERE  -->
-
-
-<style type="text/css">
-  .error{
-    padding: 5px 9px;
-    border: 1px solid red;
-    color: red;
-    border-radius: 3px;
-  }
- 
-  .success{
-    padding: 5px 9px;
-    border: 1px solid green;
-    color: green;
-    border-radius: 3px;
-  }
- 
-  form span{
-    color: red;
-  }
-</style>
- 
-<div id="respond">
-  <?php echo $response; ?>
-  <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
-    <p><label for="name">Name: <span>*</span> <br><input type="text" name="message_name" value="<?php echo esc_attr($_POST['message_name']); ?>"></label></p>
-    <p><label for="message_email">Email: <span>*</span> <br><input type="text" name="message_email" value="<?php echo esc_attr($_POST['message_email']); ?>"></label></p>
-    <p><label for="message_text">Message: <span>*</span> <br><textarea type="text" name="message_text"><?php echo esc_textarea($_POST['message_text']); ?></textarea></label></p>
-    <p><label for="message_human">Human Verification: <span>*</span> <br><input type="text" style="width: 60px;" name="message_human"> + 3 = 5</label></p>
-    <input type="hidden" name="submitted" value="1">
-    <p><input type="submit"></p>
-  </form>
-</div>
-
-
-
-
-
+				</div>
 
 		</main>
 		<!-- #main -->
