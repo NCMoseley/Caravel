@@ -146,7 +146,7 @@
 				<section class="dont-hesitate-container">
 					<h2 class="dont-hesitate">Don't hesitate to get in touch!</h2>
 
-					<?php echo do_shortcode("[sitepoint_contact_form]"); ?>
+					<?php echo do_shortcode("[email-form-plugin]"); ?>
 
 					<a id="contact" hfre="">Seriously though you know you will love working with us.</a>
 
