@@ -707,6 +707,9 @@ object {
 .gallery-caption {
   display: block; }
 
+#primary-menu {
+  display: none; }
+
 .header-menu-logo {
   height: 48px;
   width: 200px;
@@ -1367,7 +1370,7 @@ object {
           align-items: left; }
   @media all and (min-width: 600px) {
     .dont-hesitate-container {
-      margin-left: 10%; } }
+      margin-left: 5%; } }
   .dont-hesitate-container h2 {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
