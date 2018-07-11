@@ -47,8 +47,7 @@
 						<div class="sliding-background"></div>
 						<span class="title-paragraph-container">
 							<h2>Services</h2>
-							<p>archaic history uniqueness biological bombardment individual phase transition interaction genocide apocalyptic causal
-								information shaman avalanche matrix impulse </p>
+							<p>We provide a comprehensive suite of services to build out your online presence. From concept to execution, we can assist with whatever you need.</p>
 						</span>
 						<div class="bullet-container">
 							<div class="left">
@@ -104,39 +103,32 @@
 				<div class="team-background">
 					<section class="team-wrapper">
 						<h2>The Team</h2>
-						<p>Don't be fooled by the smiles, these Navy Seals of code are not guys you would want to get stuck with in a dark alley.</p>
-						<p>We are a boutique agency that specializes in custom Websites built with WordPress. They are designed to be clean, simple
-							and future proof. We have helped our clients realize their online voice and increased traffic, conversion and ranking.
-							Find out how we can help you.
+						<p>Our team is a dynamic and varied group, with overlapping experience in several different disciplines. We are four good friends who have been working together for quite a while now, and motivate each other to be the best we can be.
 						</p>
 						<div class="team-container">
 							<div class="team-top-row">
 								<div class="team-single">
 									<img id="Sean" alt="Sean-photo" src="<?php echo get_template_directory_uri() . '/assets/Sean.jpg'?>" />
 									<h3 class="position">Sean Stobo</br> - Founder, Project Manager</h3>
-									<p>human dynamics life Buddha LSD DMT mind-blowing topological final dream mushoom technology terminal Christianity
-										neoarchaism electromagnetic consequences drumming orbit catalytic psilocybin</p>
+									<p></p>
 								</div>
 
 								<div class="team-single">
 									<img id="Nate" alt="Nate-photo" src="<?php echo get_template_directory_uri() . '/assets/Nate.jpg'?>" />
 									<h3 class="position">Nathan Moseley</br> - Business Manager and Developer</h3>
-									<p>Nathan comes from a diverse background, and has recently learned that he loves to build Apps. He also enjoys extreme
-										sports and a great Latte.</p>
+									<p>Nathan comes from a diverse background, and has recently learned that he loves to build Apps. He also enjoys extreme sports and a great Latte.</p>
 								</div>
 							</div>
 							<div class="team-second-row">
 								<div class="team-single">
 									<img id="Colin" alt="Colin-photo" src="<?php echo get_template_directory_uri() . '/assets/Colin.jpg'?>" />
 									<h3 class="position">Colin Matson-Jones</br> - Lead Developer</h3>
-									<p>human dynamics life Buddha LSD DMT mind-blowing topological final dream mushoom technology terminal Christianity
-										neoarchaism electromagnetic consequences drumming orbit catalytic psilocybin</p>
+									<p></p>
 								</div>
 								<div class="team-single">
 									<img id="Ilya" alt="Ilya-photo" src="<?php echo get_template_directory_uri() . '/assets/ilya.jpg'?>" />
 									<h3 class="position">Ilya Meerovich</br> - Web Developer</h3>
-									<p>human dynamics life Buddha LSD DMT mind-blowing topological final dream mushoom technology terminal Christianity
-										neoarchaism electromagnetic consequences drumming orbit catalytic psilocybin</p>
+									<p></p>
 								</div>
 							</div>
 						</div>
@@ -148,7 +140,7 @@
 
 					<?php echo do_shortcode("[email-form-plugin]"); ?>
 
-					<a id="contact" hfre="">Seriously though you know you will love working with us.</a>
+					<a id="contact" hfre="">We know you will love working with us</a>
 
 				</section>
 				</div>

@@ -11,7 +11,7 @@
   <div class="responsive">
 
     <div class="tile hummingbird">
-      <a href="https://volunteer.hummingbirdnetwork.com" target="_blank">
+      <a href="https://hummingbirdnetwork.com/" target="_blank">
         <img class="tile__img" alt="hummingbird-photo" src="<?php echo get_template_directory_uri() . '/assets/Hummingbird-Blur.jpg'?>"
           data-src="<?php echo get_template_directory_uri() . '/assets/Hummingbird.jpg'?>" />
       </a>
@@ -34,7 +34,7 @@
     </div>
 
     <div class="tile nexus">
-      <a href="http://nexus.van.cp.academy.red/" target="_blank">
+      <a href="#" target="_blank">
         <img class="tile__img" alt="nexus-photo" src="<?php echo get_template_directory_uri() . '/assets/Nexus-Blur.jpg'?>" data-src="<?php echo get_template_directory_uri() . '/assets/Nexus.jpg'?>"
         />
       </a>
