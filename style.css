@@ -445,8 +445,6 @@ textarea {
       -ms-flex-align: center;
           align-items: center;
   opacity: 0.9;
-  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
   background-color: #fff;
   -webkit-animation: nav 0.5s;
           animation: nav 0.5s;
@@ -783,7 +781,7 @@ object {
       width: 0;
       bottom: -10px;
       left: 0;
-      background-color: #000;
+      background-color: #212121;
       -webkit-animation-name: h1pseudo;
               animation-name: h1pseudo;
       -webkit-animation-duration: 0.7s;
@@ -861,6 +859,7 @@ object {
 
 .header-container {
   width: 100%;
+  height: 920px;
   padding: 10rem 5%;
   background-color: #fff; }
   @media all and (max-width: 650px) {
@@ -868,9 +867,13 @@ object {
       padding-top: 75px; } }
   .header-container h1 {
     font-family: "Playfair Display", Times, serif;
-    font-size: 3rem; }
+    font-size: 5rem;
+    color: #212121; }
   .header-container p {
+    max-width: 600px;
     letter-spacing: 3px; }
+    .header-container p strong:hover {
+      text-decoration: underline; }
 
 .second-container {
   background-color: #e7e7e7;
@@ -1177,7 +1180,7 @@ object {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  background-color: #000;
+  background-color: #212121;
   padding: 3%; }
   @media all and (min-width: 1000px) {
     .our-work-right {
@@ -1201,6 +1204,7 @@ object {
     text-transform: uppercase; }
   .our-work-right p {
     color: #fff;
+    font-weight: 100;
     text-align: center;
     width: 80%;
     margin: 0 auto;
@@ -1217,6 +1221,7 @@ object {
         width: 100%; } }
   .our-work-right a {
     text-decoration: none;
+    text-transform: uppercase;
     position: relative;
     color: #fff; }
   .our-work-right a:after {
@@ -1236,7 +1241,7 @@ object {
     width: 100%; }
 
 .our-work-header {
-  background-color: #000;
+  background-color: #212121;
   font-family: "Playfair Display", Times, serif;
   font-size: 2rem;
   text-align: center;
@@ -1248,7 +1253,7 @@ object {
     font-weight: 100; }
 
 .team-background {
-  background-color: #000; }
+  background-color: #212121; }
 
 .team-wrapper {
   padding: 5% 1%;
@@ -1353,7 +1358,7 @@ object {
 
 .dont-hesitate-container {
   padding: 10%;
-  background-color: #000;
+  background-color: #212121;
   color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;

@@ -21,7 +21,7 @@
 							<br>Efficient Websites.</h1>
 						<p>We build modern websites for modern businesses and individuals. No fluff, no over design, no bloat. Fast, elegant,
 							and precisely what you need. We will get you where you want to be.
-							<strong>Set sail!</strong>
+								<a href="#contact"><strong>Set sail!</strong></a>
 						</p>
 					</div>
 				</section>
@@ -72,8 +72,6 @@
 							</div>
 						</div>
 				</section>
-
-
 
 
 				<section class="our-work-section">
