@@ -1384,8 +1384,10 @@ object {
     font-size: 60px;
     padding: 4% 0;
     padding-right: 20%; }
-  .dont-hesitate-container p {
+  .dont-hesitate-container a {
     color: #404040; }
+    .dont-hesitate-container a:hover {
+      color: #404040 !important; }
 
 @-webkit-keyframes slideup {
   from {

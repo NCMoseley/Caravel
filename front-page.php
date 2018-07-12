@@ -138,7 +138,7 @@
 
 					<?php echo do_shortcode("[email-form-plugin]"); ?>
 
-					<p>We know you will love working with us</p>
+					<a id="contact" hfre=""><p>We know you will love working with us</p></a>
 
 				</section>
 				</div>
