@@ -417,6 +417,8 @@
     width: 80%;
     margin: 0 auto;
     margin-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     @media all and (min-width: 1000px) {
       text-align: left;
       padding-right: 55px;
@@ -585,12 +587,8 @@
     padding: 4% 0;
     padding-right: 20%;
   }
-  a {
-    text-decoration: none; // position: relative;
-    // font-weight: 100;
-    // padding: 4% 10% 0 10%;
-    // cursor: pointer;
-    // color: $color__text-light;
+  p {
+    color: $color__text-main;
   }
 }
 
