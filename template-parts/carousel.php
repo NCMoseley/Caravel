@@ -17,9 +17,7 @@
       </a>
     </div>
 
-   
-
-    <div class="tile valo">
+    <!-- <div class="tile valo">
       <a href="https://valosmartcity.com/" target="_blank">
         <img class="tile__img" alt="valo-photo" src="<?php echo get_template_directory_uri() . '/assets/Valo-Blur.jpg'?>" data-src="<?php echo get_template_directory_uri() . '/assets/Valo.jpg'?>"
         />
@@ -31,7 +29,7 @@
         <img class="tile__img" alt="pacwest-photo" src="<?php echo get_template_directory_uri() . '/assets/PacWest-Blur.jpg'?>"
           data-src="<?php echo get_template_directory_uri() . '/assets/PacWest.png'?>" />
       </a>
-    </div>
+    </div> -->
 
     <div class="tile nexus">
       <a href="#" target="_blank">

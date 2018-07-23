@@ -108,20 +108,20 @@
 								<div class="team-single">
 									<img id="Sean" alt="Sean-photo" src="<?php echo get_template_directory_uri() . '/assets/Sean.jpg'?>" />
 									<h3 class="position">Sean Stobo</br> - Founder, Project Manager</h3>
-									<p></p>
+									<p>Sean is an avid outdoorsman who moves between Vancouver and Pemberton, chasing fun and adventure. His specialty is advanced CSS and PHP</p>
 								</div>
 
 								<div class="team-single">
 									<img id="Nate" alt="Nate-photo" src="<?php echo get_template_directory_uri() . '/assets/Nate.jpg'?>" />
 									<h3 class="position">Nathan Moseley</br> - Business Manager and Developer</h3>
-									<p>Nathan comes from a diverse background, and has recently learned that he loves to build Apps. He also enjoys extreme sports and a great Latte.</p>
+									<p>Nathan comes from a technical background, and has grown a passion for putting together exciting and great looking user interfaces. He also enjoys extreme sports and a great Latte.</p>
 								</div>
 							</div>
 							<div class="team-second-row">
 								<div class="team-single">
 									<img id="Colin" alt="Colin-photo" src="<?php echo get_template_directory_uri() . '/assets/Colin.jpg'?>" />
 									<h3 class="position">Colin Matson-Jones</br> - Lead Developer</h3>
-									<p></p>
+									<p>Colin Matson-Jones is a driven front-end developer with a passion for self improvement and learning new things. He loves building beautiful and intuitive user interfaces and is currently doing a deep-dive into the nuances of Javascript with Node, React, and Mongo</p>
 								</div>
 								<div class="team-single">
 									<img id="Ilya" alt="Ilya-photo" src="<?php echo get_template_directory_uri() . '/assets/ilya.jpg'?>" />

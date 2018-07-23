@@ -1,0 +1,24 @@
+{
+  "name": "Nathan Moseley",
+  "version": "1.0.0",
+  "description": "developer",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "technologies": {
+    "React": true,
+    "Node.js": true,
+    "Javascript": "es2016"
+  },
+  "prettier": {
+    "unLikely": true
+  },
+  "scripts": {
+    "start": "npm gogogo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ncmoseley"
+  },
+  "license": "ISC",
+  "education": "2.ongoing"
+}
